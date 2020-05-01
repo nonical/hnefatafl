@@ -1,5 +1,3 @@
-﻿using UnityEngine;
-
-public class Tile : MonoBehaviour {
+﻿public class Tile : IndexedObject {
     public bool isOccupied;
 }

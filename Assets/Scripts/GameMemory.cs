@@ -29,6 +29,8 @@ public class GameMemory : MonoBehaviour {
                 }
             }
         }
+
+        MovementLogic.FigureMoved += MoveFigure;
     }
 
     List<GameObject> GetAllChildren(GameObject parent) {
@@ -48,6 +50,8 @@ public class GameMemory : MonoBehaviour {
             List<GameObject> temp = GetAllChildren(rows[i]);
 
             for (int j = 0; j < 11; j++) {
+                temp[j].GetComponent<Tile>().i = i;
+                temp[j].GetComponent<Tile>().j = j;
                 Tiles[i, j] = temp[j];
             }
         }
@@ -75,6 +79,9 @@ public class GameMemory : MonoBehaviour {
         figure.transform.SetParent(tile.CompareTag("Spawn_Team_A") ? TeamA : TeamB);
         figure.transform.position = new Vector3(tile.transform.position.x, tile.transform.position.y + spawnHeightOffset, tile.transform.position.z);
 
+        figure.GetComponent<IndexedObject>().i = tile.GetComponent<Tile>().i;
+        figure.GetComponent<IndexedObject>().j = tile.GetComponent<Tile>().j;
+
         return figure;
     }
 
@@ -84,5 +91,27 @@ public class GameMemory : MonoBehaviour {
                 Figures[i, j] = MakeNewFigure(Tiles[i, j]);
             }
         }
+    }
+
+    public static (int, int) GetIndices(GameObject obj) {
+        var indexedObj = obj.GetComponent<IndexedObject>();
+
+        return (indexedObj.i, indexedObj.j);
+    }
+
+    static void MoveFigure(GameObject figure, (int i, int j) dest) {
+        (int i, int j) = GetIndices(figure);
+
+        // move figure in matrix
+        Figures[i, j] = null;
+        Figures[dest.i, dest.j] = figure;
+
+        // change tile state
+        Tiles[i, j].GetComponent<Tile>().isOccupied = false;
+        Tiles[dest.i, dest.j].GetComponent<Tile>().isOccupied = true;
+
+        // change indices in figure's IndexedObject component
+        figure.GetComponent<IndexedObject>().i = dest.i;
+        figure.GetComponent<IndexedObject>().j = dest.j;
     }
 }
