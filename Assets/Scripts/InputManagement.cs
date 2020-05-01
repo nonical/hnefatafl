@@ -2,6 +2,7 @@
 
 public class InputManagement : MonoBehaviour {
     private Transform selectedPiece;
+    private bool isAttackerTurn = true;
 
     // Update is called once per frame
     void Update() {
@@ -13,9 +14,14 @@ public class InputManagement : MonoBehaviour {
             var selectionRenderer = selection.GetComponent<Renderer>();
 
             if (selectionRenderer != null) {
+
                 if (Input.GetMouseButtonDown(0)) {
                     // on figure click
                     if (selection.CompareTag("Selectable") || selection.CompareTag("King")) {
+                        if (isAttackerTurn && !selection.name.StartsWith("playerA") || !isAttackerTurn && (selection.name.StartsWith("playerA"))) {
+                            return;
+                        }
+
                         selectedPiece = selection;
                         MovementLogic.HighlightViableMoves(selectedPiece.gameObject);
                     }
@@ -29,7 +35,7 @@ public class InputManagement : MonoBehaviour {
 
                         MovementLogic.MovePiece(selectedPiece.gameObject, selection.gameObject);
                         selectedPiece = null;
-
+                        isAttackerTurn = !isAttackerTurn;
                         DebugHelper.LogFigures();
                         DebugHelper.LogTiles();
                     };
