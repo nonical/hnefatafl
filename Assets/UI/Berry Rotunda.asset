@@ -49,6 +49,7 @@ Material:
     - _BumpFace: 0
     - _BumpOutline: 0
     - _ColorMask: 15
+    - _CullMode: 0
     - _Diffuse: 0.5
     - _FaceDilate: 0
     - _FaceUVSpeedX: 0
@@ -113,7 +114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: Berry Rotunda
   m_EditorClassIdentifier: 
-  hashCode: -1542805741
+  hashCode: 1808884937
   material: {fileID: -6914558711328026478}
   materialHashCode: -1284620360
   m_Version: 1.1.0
@@ -3656,7 +3657,6 @@ MonoBehaviour:
   m_AtlasTextures:
   - {fileID: 437605711287199792}
   m_AtlasTextureIndex: 0
-  m_IsMultiAtlasTexturesEnabled: 0
   m_UsedGlyphRects:
   - m_X: 0
     m_Y: 0
