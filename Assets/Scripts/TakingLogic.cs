@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,10 +7,10 @@ public class TakingLogic : MonoBehaviour {
     public List<GameObject> TilesList { get; set; } = new List<GameObject>(3);
 
     void Start() {
-        MovementLogic.FigureMoved += onFigureMoved;
+        MovementLogic.FigureMoved += CheckTaking;
     }
 
-    void onFigureMoved(GameObject player, Tuple<int, int> indexes) {
+    void CheckTaking(GameObject player, (int, int) indices) {
         Func<GameObject, GameObject, bool> TakeLogic = (GameObject tile, GameObject figure) => {
             // tile must be either: a) occupied, b) not occupied and be a refugee tile
             if (!tile.GetComponent<Tile>().isOccupied && !tile.CompareTag("DeathTile") && !tile.CompareTag("KingTile")) {
@@ -40,9 +40,9 @@ public class TakingLogic : MonoBehaviour {
         };
 
         // horizontal - left
-        for (int i = 1; i <= 4 && indexes.Item2 - i >= 0; i++) {
-            var tile = GameMemory.Tiles[indexes.Item1, indexes.Item2 - i];
-            var figure = GameMemory.Figures[indexes.Item1, indexes.Item2 - i];
+        for (int i = 1; i <= 4 && indices.Item2 - i >= 0; i++) {
+            var tile = GameMemory.Tiles[indices.Item1, indices.Item2 - i];
+            var figure = GameMemory.Figures[indices.Item1, indices.Item2 - i];
 
             if (!TakeLogic(tile, figure)) break;
         }
@@ -51,9 +51,9 @@ public class TakingLogic : MonoBehaviour {
         TilesList.Clear();
 
         // horizontal - right
-        for (int i = 1; i <= 4 && indexes.Item2 + i < 11; i++) {
-            var tile = GameMemory.Tiles[indexes.Item1, indexes.Item2 + i];
-            var figure = GameMemory.Figures[indexes.Item1, indexes.Item2 + i];
+        for (int i = 1; i <= 4 && indices.Item2 + i < 11; i++) {
+            var tile = GameMemory.Tiles[indices.Item1, indices.Item2 + i];
+            var figure = GameMemory.Figures[indices.Item1, indices.Item2 + i];
 
             if (!TakeLogic(tile, figure)) break;
         }
@@ -62,9 +62,9 @@ public class TakingLogic : MonoBehaviour {
         TilesList.Clear();
 
         // vertical - up
-        for (int i = 1; i <= 4 && indexes.Item1 - i >= 0; i++) {
-            var tile = GameMemory.Tiles[indexes.Item1 - i, indexes.Item2];
-            var figure = GameMemory.Figures[indexes.Item1 - i, indexes.Item2];
+        for (int i = 1; i <= 4 && indices.Item1 - i >= 0; i++) {
+            var tile = GameMemory.Tiles[indices.Item1 - i, indices.Item2];
+            var figure = GameMemory.Figures[indices.Item1 - i, indices.Item2];
 
             if (!TakeLogic(tile, figure)) break;
         }
@@ -74,9 +74,9 @@ public class TakingLogic : MonoBehaviour {
 
 
         // vertical - down
-        for (int i = 1; i <= 4 && indexes.Item1 + i < 11; i++) {
-            var tile = GameMemory.Tiles[indexes.Item1 + i, indexes.Item2];
-            var figure = GameMemory.Figures[indexes.Item1 + i, indexes.Item2];
+        for (int i = 1; i <= 4 && indices.Item1 + i < 11; i++) {
+            var tile = GameMemory.Tiles[indices.Item1 + i, indices.Item2];
+            var figure = GameMemory.Figures[indices.Item1 + i, indices.Item2];
 
             if (!TakeLogic(tile, figure)) break;
         }
