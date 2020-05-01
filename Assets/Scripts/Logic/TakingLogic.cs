@@ -32,7 +32,6 @@ public class TakingLogic : MonoBehaviour {
 
                 return false;
             }
-
             // up to three pieces can be taken
             FigureList.Add(figure);
             TilesList.Add(tile);
