@@ -25,7 +25,8 @@ public class TakingLogic : MonoBehaviour {
             // taking can be done with: a) two pieces of the same team, b) one piece and a refugee tile,
             // c) one piece of the defending team and the King
             if (figure?.name == player.name || tile.CompareTag("DeathTile") || tile.CompareTag("KingTile")
-                || (player.name.StartsWith("playerB") && figure.CompareTag("King"))) {
+                || (player.name.StartsWith("playerB") && figure.CompareTag("King"))
+                || (player.name.StartsWith("playerKing") && figure.name.StartsWith("playerB"))) {
                 FigureList.ForEach(enemyFigure => Destroy(enemyFigure));
                 TilesList.ForEach(enemyTile => enemyTile.GetComponent<Tile>().isOccupied = false);
 
