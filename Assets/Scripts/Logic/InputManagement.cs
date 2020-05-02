@@ -11,10 +11,8 @@ public class InputManagement : MonoBehaviour {
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit)) {
             var selection = hit.transform;
-            var selectionRenderer = selection.GetComponent<Renderer>();
 
-            if (selectionRenderer != null) {
-
+            if (selection != null) {
                 if (Input.GetMouseButtonDown(0)) {
                     // on figure click
                     if (selection.CompareTag("Selectable") || selection.CompareTag("King")) {
