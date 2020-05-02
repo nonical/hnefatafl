@@ -32,6 +32,12 @@ public class TakingLogic : MonoBehaviour {
 
                 return false;
             }
+
+            // if the King is captured - defenders lose
+            if (figure.CompareTag("King")) {
+                WinConditions.AttackersWin?.Invoke("The King has fallen!");
+            }
+
             // up to three pieces can be taken
             FigureList.Add(figure);
             TilesList.Add(tile);
