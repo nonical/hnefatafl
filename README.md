@@ -1,4 +1,4 @@
-![alt](https://cdn.nedzad.dev/hnefatafl/readme-banner.png)
+![Readme Banner](https://cdn.nedzad.dev/hnefatafl/readme-banner.webp)
 
 # Board Game of the Vikings
 
@@ -10,7 +10,7 @@ The Attackers move first. The Attackers win by capturing the King.
 
 ### Defenders & the King
 
-This team wins if the king “escapes” to one of the corner (haven) tiles.
+This team wins if the king “escapes” to one of the haven tiles.
 
 ### Movement
 
