@@ -1,6 +1,11 @@
 ﻿using UnityEngine;
 
 public class DebugHelper : MonoBehaviour {
+    private void Start() {
+        WinConditions.DefendersWin += str => Debug.Log(str);
+        WinConditions.AttackersWin += str => Debug.Log(str);
+    }
+
     public static void LogFigures() {
         string matrix = "Figures:\n";
 
