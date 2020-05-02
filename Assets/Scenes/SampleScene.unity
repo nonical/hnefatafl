@@ -845,11 +845,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9efddb9802c3a4b4cac40f615cde63ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerA_Prefab: {fileID: 1429270194739322698, guid: 10122aa02c46e604883ccf341a2e70d1,
+  PlayerA_Prefab: {fileID: 7209287868505356327, guid: 10122aa02c46e604883ccf341a2e70d1,
     type: 3}
-  PlayerB_Prefab: {fileID: 5023905503670578042, guid: 4a45bbc74f89e264bbd3c59b37fd797e,
+  PlayerB_Prefab: {fileID: 7353130321678317901, guid: 4a45bbc74f89e264bbd3c59b37fd797e,
     type: 3}
-  PlayerKing_Prefab: {fileID: 1429270194739322698, guid: 4ec3abe0b980143468838526a4a5d73d,
+  PlayerKing_Prefab: {fileID: 2428685675628088562, guid: 4ec3abe0b980143468838526a4a5d73d,
     type: 3}
   spawnHeightOffset: 5
 --- !u!114 &149631285
