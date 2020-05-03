@@ -20,30 +20,28 @@ public class InputManagement : MonoBehaviour {
         if (Physics.Raycast(ray, out hit)) {
             var selection = hit.transform;
 
-            if (selectionRenderer != null) {
-                if (Input.GetMouseButtonDown(0)) {
-                    if (pieceMoving) return;
+            if (Input.GetMouseButtonDown(0)) {
+                if (pieceMoving) return;
 
-                    // on figure click
-                    if (selection.CompareTag("Selectable") || selection.CompareTag("King")) {
-                        if (isAttackerTurn && !selection.name.StartsWith("playerA") || !isAttackerTurn && (selection.name.StartsWith("playerA"))) {
-                            return;
-                        }
-
-                        selectedPiece = selection;
-                        MovementLogic.HighlightViableMoves(selectedPiece.gameObject);
+                // on figure click
+                if (selection.CompareTag("Selectable") || selection.CompareTag("King")) {
+                    if (isAttackerTurn && !selection.name.StartsWith("playerA") || !isAttackerTurn && (selection.name.StartsWith("playerA"))) {
+                        return;
                     }
 
-                    // halt if no piece selected
-                    if (selectedPiece == null) return;
-
-                    // on tile click
-                    if (selection.CompareTag("Highlight") ||
-                        ((selection.CompareTag("KingTile") || selection.CompareTag("DeathTile")) && selectedPiece.CompareTag("King"))) {
-                        pieceMoving = true;
-                        MovementLogic.MovePiece(selectedPiece.gameObject, selection.gameObject);
-                    };
+                    selectedPiece = selection;
+                    MovementLogic.HighlightViableMoves(selectedPiece.gameObject);
                 }
+
+                // halt if no piece selected
+                if (selectedPiece == null) return;
+
+                // on tile click
+                if (selection.CompareTag("Highlight") ||
+                    ((selection.CompareTag("KingTile") || selection.CompareTag("DeathTile")) && selectedPiece.CompareTag("King"))) {
+                    pieceMoving = true;
+                    MovementLogic.MovePiece(selectedPiece.gameObject, selection.gameObject);
+                };
             }
         }
     }
