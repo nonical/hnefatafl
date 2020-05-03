@@ -20,13 +20,10 @@ public class MovementLogic : MonoBehaviour {
         if (dest.Item1 != origin.Item1 && dest.Item2 != origin.Item2) return;
 
         // change figure postion
-        figure.transform.position = new Vector3(destinationTile.transform.position.x, figure.transform.position.y, destinationTile.transform.position.z);
+        figure.GetComponent<Piece>().MovePiece(destinationTile);
 
         // finally, clear highlights
         resetHighlight();
-
-        // fire event
-        FigureMoved(figure, dest);
     }
 
     public static void HighlightViableMoves(GameObject figure) {
