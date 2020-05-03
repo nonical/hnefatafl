@@ -887,7 +887,7 @@ GameObject:
   - component: {fileID: 6205363230571991109}
   - component: {fileID: 6205363230474852036}
   - component: {fileID: -7350743569734132750}
-  - component: {fileID: 6334031566852728207}
+  - component: {fileID: 3048191974311872911}
   m_Layer: 0
   m_Name: Piece
   m_TagString: Selectable
@@ -961,8 +961,8 @@ MonoBehaviour:
   i: 0
   j: 0
   speed: 2
---- !u!65 &6334031566852728207
-BoxCollider:
+--- !u!136 &3048191974311872911
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -971,6 +971,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1.6, z: 1}
-  m_Center: {x: 0, y: 0.77, z: 0}
+  m_Radius: 0.35
+  m_Height: 1.57
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.78, z: 0}
