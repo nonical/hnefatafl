@@ -38,10 +38,10 @@ public class Piece : IndexedObject {
     public void MovePiece(GameObject target) {
         var (targetI, targetJ) = GameMemory.GetIndices(target);
 
-        if (targetJ == j) {
-            transform.eulerAngles = targetI < i ? FacingDirection.Left : FacingDirection.Right;
+        if (targetI == i) {
+            transform.eulerAngles = targetJ < j ? FacingDirection.Left : FacingDirection.Right;
         } else {
-            transform.eulerAngles = targetJ < j ? FacingDirection.Up : FacingDirection.Down;
+            transform.eulerAngles = targetI < i ? FacingDirection.Up : FacingDirection.Down;
         }
 
         moveTarget = target;
