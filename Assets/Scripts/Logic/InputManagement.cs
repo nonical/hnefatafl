@@ -43,9 +43,6 @@ public class InputManagement : MonoBehaviour {
                         ((selection.CompareTag("KingTile") || selection.CompareTag("DeathTile")) && selectedPiece.CompareTag("King"))) {
                         pieceMoving = true;
                         MovementLogic.MovePiece(selectedPiece.gameObject, selection.gameObject);
-
-                        DebugHelper.LogFigures();
-                        DebugHelper.LogTiles();
                     };
                 }
             }
