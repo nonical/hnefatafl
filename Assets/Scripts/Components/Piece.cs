@@ -39,9 +39,9 @@ public class Piece : IndexedObject {
         var (targetI, targetJ) = GameMemory.GetIndices(target);
 
         if (targetJ == j) {
-            transform.eulerAngles = targetI < i ? new Vector3(0, 0) : new Vector3(0, 180);
+            transform.eulerAngles = targetI < i ? FacingDirection.Left : FacingDirection.Right;
         } else {
-            transform.eulerAngles = targetJ < j ? new Vector3(0, -90) : new Vector3(0, 90);
+            transform.eulerAngles = targetJ < j ? FacingDirection.Up : FacingDirection.Down;
         }
 
         moveTarget = target;
