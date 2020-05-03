@@ -2,8 +2,9 @@
 using UnityEngine;
 
 public class GameMemory : MonoBehaviour {
-    public static GameObject[,] Figures { get; private set; } = new GameObject[11, 11];
-    public static GameObject[,] Tiles { get; private set; } = new GameObject[11, 11];
+    public static GameObject[,] Figures { get; } = new GameObject[11, 11];
+    public static GameObject[,] Tiles { get; } = new GameObject[11, 11];
+    private static Dictionary<(int i, int j), Vector3> SpawnDirections { get; set; }
 
     Transform Inner, TeamA, TeamB;
 
@@ -13,8 +14,9 @@ public class GameMemory : MonoBehaviour {
     [SerializeField, Range(1, 10)]
     float spawnHeightOffset;
 
-    // Start is called before the first frame update
     void Start() {
+        LoadSpawnDirections();
+
         Inner = transform.GetChild(0).GetChild(0);
         TeamA = transform.GetChild(1);
         TeamB = transform.GetChild(2);
@@ -82,6 +84,8 @@ public class GameMemory : MonoBehaviour {
         figure.GetComponent<IndexedObject>().i = tile.GetComponent<Tile>().i;
         figure.GetComponent<IndexedObject>().j = tile.GetComponent<Tile>().j;
 
+        figure.transform.eulerAngles = SpawnDirections[GetIndices(figure)];
+
         return figure;
     }
 
@@ -113,5 +117,64 @@ public class GameMemory : MonoBehaviour {
         // change indices in figure's IndexedObject component
         figure.GetComponent<IndexedObject>().i = dest.i;
         figure.GetComponent<IndexedObject>().j = dest.j;
+    }
+
+    static void LoadSpawnDirections() {
+        SpawnDirections = new Dictionary<(int i, int j), Vector3> {
+            // Row 0
+            { (0, 3), FacingDirection.Down },
+            { (0, 4), FacingDirection.Down },
+            { (0, 5), FacingDirection.Down },
+            { (0, 6), FacingDirection.Down },
+            { (0, 7), FacingDirection.Down },
+
+            // Row 1
+            { (1, 5), FacingDirection.Down },
+
+            // Row 3
+            { (3, 0), FacingDirection.Right },
+            { (3, 5), FacingDirection.Up },
+            { (3, 10), FacingDirection.Left },
+
+            // Row 4
+            { (4, 0), FacingDirection.Right },
+            { (4, 4), FacingDirection.Left / 2 },
+            { (4, 5), FacingDirection.Up },
+            { (4, 6), FacingDirection.Right / 2 },
+            { (4, 10), FacingDirection.Left },
+
+            // Row 5
+            { (5, 0), FacingDirection.Right },
+            { (5, 1), FacingDirection.Right },
+            { (5, 3), FacingDirection.Left },
+            { (5, 4), FacingDirection.Left },
+            { (5, 5), FacingDirection.Down },
+            { (5, 6), FacingDirection.Right },
+            { (5, 7), FacingDirection.Right },
+            { (5, 9), FacingDirection.Left },
+            { (5, 10), FacingDirection.Left },
+
+            // Row 6
+            { (6, 0), FacingDirection.Right },
+            { (6, 4), FacingDirection.Down + FacingDirection.Right / 2 },
+            { (6, 5), FacingDirection.Down },
+            { (6, 6), FacingDirection.Down - FacingDirection.Right / 2 },
+            { (6, 10), FacingDirection.Left },
+
+            // Row 7
+            { (7, 0), FacingDirection.Right },
+            { (7, 5), FacingDirection.Down },
+            { (7, 10), FacingDirection.Left },
+
+            // Row 9
+            { (9, 5), FacingDirection.Up },
+
+            // Row 10
+            { (10, 3), FacingDirection.Up },
+            { (10, 4), FacingDirection.Up },
+            { (10, 5), FacingDirection.Up },
+            { (10, 6), FacingDirection.Up },
+            { (10, 7), FacingDirection.Up }
+        };
     }
 }
