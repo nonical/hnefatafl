@@ -27,10 +27,12 @@ public class TakingLogic : MonoBehaviour {
             if (figure?.name == player.name || tile.CompareTag("DeathTile") || tile.CompareTag("KingTile")
                 || (player.name.StartsWith("playerB") && figure.CompareTag("King"))
                 || (player.name.StartsWith("playerKing") && figure.name.StartsWith("playerB"))) {
-                player.GetComponent<Piece>().AttackAnimation();
+                if (FigureList.Count > 0) {
+                    player.GetComponent<Piece>().AttackAnimation();
 
-                FigureList.ForEach(enemyFigure => Destroy(enemyFigure));
-                TilesList.ForEach(enemyTile => enemyTile.GetComponent<Tile>().isOccupied = false);
+                    FigureList.ForEach(enemyFigure => Destroy(enemyFigure));
+                    TilesList.ForEach(enemyTile => enemyTile.GetComponent<Tile>().isOccupied = false);
+                }
 
                 return false;
             }
