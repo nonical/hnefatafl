@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class TakingLogic : MonoBehaviour {
@@ -30,16 +31,16 @@ public class TakingLogic : MonoBehaviour {
                 if (FigureList.Count > 0) {
                     player.GetComponent<Piece>().AttackAnimation();
 
+                    //if the King is captured - defenders lose
+                    if (FigureList.Any(x => x.CompareTag("King"))) {
+                        WinConditions.AttackersWin?.Invoke();
+                    }
+
                     FigureList.ForEach(enemyFigure => Destroy(enemyFigure));
                     TilesList.ForEach(enemyTile => enemyTile.GetComponent<Tile>().isOccupied = false);
                 }
 
                 return false;
-            }
-
-            // if the King is captured - defenders lose
-            if (figure.CompareTag("King")) {
-                WinConditions.AttackersWin?.Invoke();
             }
 
             // up to three pieces can be taken
