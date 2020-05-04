@@ -3,10 +3,8 @@ using System.Linq;
 using UnityEngine;
 
 public class WinConditions : MonoBehaviour {
-
     public GameObject pieceManager;
     public GameObject gameFinishedUI;
-
 
     public static Action AttackersWin;
     public static Action DefendersWin;
@@ -14,7 +12,7 @@ public class WinConditions : MonoBehaviour {
     void Start() {
         MovementLogic.FigureMoved += CheckHavenTiles;
         AttackersWin += AttackersWinMessage;
-        DefendersWin += DefendersWinMessage;   
+        DefendersWin += DefendersWinMessage;
     }
 
     public static void CheckHavenTiles(GameObject _, (int i, int j) indices) {
