@@ -2,8 +2,8 @@
 
 public class DebugHelper : MonoBehaviour {
     private void Start() {
-        WinConditions.DefendersWin += str => Debug.Log(str);
-        WinConditions.AttackersWin += str => Debug.Log(str);
+        //WinConditions.DefendersWin += str => Debug.Log(str);
+        //WinConditions.AttackersWin += str => Debug.Log(str);
 
         MovementLogic.FigureMoved += (GameObject _, (int,int) __) => {
             LogFigures();
