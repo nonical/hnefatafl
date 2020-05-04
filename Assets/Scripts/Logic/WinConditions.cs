@@ -27,16 +27,21 @@ public class WinConditions : MonoBehaviour {
         pieceManager.GetComponent<InputManagement>().enabled = val;
     }
 
-    public void DefendersWinMessage() {//bug here idk why
+    public void DefendersWinMessage() {
         gameFinishedUI.transform.GetChild(0).gameObject.SetActive(true); //display defenders win text
         gameFinishedUI.SetActive(true);
         Time.timeScale = 0f;
         toggleInputScript(false);
+        AttackersWin -= AttackersWinMessage;
+        DefendersWin -= DefendersWinMessage;
     }
-    public void AttackersWinMessage() { //bug here idk why
+
+    public void AttackersWinMessage() {
         gameFinishedUI.transform.GetChild(1).gameObject.SetActive(true); //display attackers win text
         gameFinishedUI.SetActive(true);
         Time.timeScale = 0f;
         toggleInputScript(false);
+        AttackersWin -= AttackersWinMessage;
+        DefendersWin -= DefendersWinMessage;
     }
 }
