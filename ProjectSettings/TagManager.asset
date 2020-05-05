@@ -7,7 +7,7 @@ TagManager:
   - playerA
   - playerB
   - playerKing
-  - tileAccessible
+  - tileDefault
   - tileSpawnA
   - tileSpawnB
   - tileKing
