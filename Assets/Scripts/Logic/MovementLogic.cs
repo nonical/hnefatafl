@@ -80,9 +80,9 @@ public static class MovementLogic {
         var higlightedTiles = GameObject.FindGameObjectsWithTag(TileTags.Highlight).ToList();
 
         higlightedTiles.ForEach(tile => {
-            if (tile.name.StartsWith("KingTile")) {
+            if (tile.name == "TileKing") {
                 tile.tag = TileTags.King;
-            } else if (tile.name.StartsWith("DeathTile")) {
+            } else if (tile.name == "TileHaven") {
                 tile.tag = TileTags.Haven;
             }
 
