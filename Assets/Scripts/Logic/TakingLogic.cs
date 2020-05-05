@@ -26,7 +26,7 @@ public class TakingLogic : MonoBehaviour {
 
             // taking can be done with: a) two pieces of the same team, b) one piece and a refugee tile,
             // c) one piece of the defending team and the King
-            if (figure.CompareTag(player.tag) || tile.CompareTag(TileTags.Haven) || tile.CompareTag(TileTags.King) ||
+            if (figure == null || figure.CompareTag(player.tag) || tile.CompareTag(TileTags.Haven) || tile.CompareTag(TileTags.King) ||
                (player.CompareTag(FigureTags.TeamB) && figure.CompareTag(FigureTags.King)) ||
                (figure.CompareTag(FigureTags.King) && player.CompareTag(FigureTags.TeamB))) {
                 if (FigureList.Count > 0) {
