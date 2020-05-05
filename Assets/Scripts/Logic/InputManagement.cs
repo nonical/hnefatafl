@@ -32,14 +32,14 @@ public class InputManagement : MonoBehaviour {
 
                     selectedPiece = selection;
                     MovementLogic.HighlightViableMoves(selectedPiece.gameObject);
+                    return;
                 }
 
                 // halt if no piece selected
                 if (selectedPiece == null) return;
 
                 // on tile click
-                if (selection.CompareTag(TileTags.Highlight) || ((selection.CompareTag(TileTags.King) || selection.CompareTag(TileTags.Haven)) &&
-                    selectedPiece.CompareTag(FigureTags.King))) {
+                if (selection.GetComponent<Tile>().isHighlighted) {
                     pieceMoving = true;
                     MovementLogic.MovePiece(selectedPiece.gameObject, selection.gameObject);
                 };

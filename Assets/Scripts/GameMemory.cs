@@ -25,14 +25,6 @@ public class GameMemory : MonoBehaviour {
         AssignAllTiles();
         AssignAllFigures();
 
-        for (int i = 0; i < 11; i++) {
-            for (int j = 0; j < 11; j++) {
-                if (Tiles[i, j].CompareTag(TileTags.SpawnA) || Tiles[i, j].CompareTag(TileTags.SpawnB)) {
-                    Tiles[i, j].tag = TileTags.Accessible;
-                }
-            }
-        }
-
         MovementLogic.FigureMoved += MoveFigure;
     }
 
@@ -79,11 +71,11 @@ public class GameMemory : MonoBehaviour {
             figure = Instantiate(PlayerB_Prefab);
         }
 
-        figure.transform.SetParent(tile.CompareTag(TileTags.SpawnA) ? TeamA : TeamB);
+        figure.transform.SetParent(figure.CompareTag(FigureTags.TeamA) ? TeamA : TeamB);
         figure.transform.position = new Vector3(tile.transform.position.x, tile.transform.position.y + spawnHeightOffset, tile.transform.position.z);
 
-        figure.GetComponent<IndexedObject>().i = tile.GetComponent<Tile>().i;
-        figure.GetComponent<IndexedObject>().j = tile.GetComponent<Tile>().j;
+        figure.GetComponent<Piece>().i = tile.GetComponent<Tile>().i;
+        figure.GetComponent<Piece>().j = tile.GetComponent<Tile>().j;
 
         figure.transform.eulerAngles = SpawnDirections[GetIndices(figure)];
 
@@ -116,8 +108,8 @@ public class GameMemory : MonoBehaviour {
         Tiles[dest.i, dest.j].GetComponent<Tile>().isOccupied = true;
 
         // change indices in figure's IndexedObject component
-        figure.GetComponent<IndexedObject>().i = dest.i;
-        figure.GetComponent<IndexedObject>().j = dest.j;
+        figure.GetComponent<Piece>().i = dest.i;
+        figure.GetComponent<Piece>().j = dest.j;
     }
 
     static void LoadSpawnDirections() {

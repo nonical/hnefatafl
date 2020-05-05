@@ -1,9 +1,13 @@
 ﻿using System;
 using System.Linq;
+using Boo.Lang;
 using Tags;
 using UnityEngine;
+using UnityEngine.UI;
 
 public static class MovementLogic {
+    private static readonly List<Tile> HighlightedTiles = new List<Tile>();
+
     public static Action<GameObject, (int i, int j)> FigureMoved;
 
     public static void MovePiece(GameObject figure, GameObject destinationTile) {
@@ -32,8 +36,10 @@ public static class MovementLogic {
             // only the King may visit the refugee tiles
             if ((tile.CompareTag(TileTags.Haven) || tile.CompareTag(TileTags.King)) && isKing == false) return;
 
-            tile.GetComponent<Renderer>().material.color = Color.green;
-            tile.gameObject.tag = TileTags.Highlight;
+            var highlighted = tile.GetComponent<Tile>();
+
+            highlighted.ToggleHighlight(true);
+            HighlightedTiles.Add(highlighted);
         };
 
         // reset any existing highlighting
@@ -77,20 +83,10 @@ public static class MovementLogic {
     }
 
     public static void resetHighlight() {
-        var higlightedTiles = GameObject.FindGameObjectsWithTag(TileTags.Highlight).ToList();
+        foreach (var tile in HighlightedTiles) {
+            tile.ToggleHighlight(false);
+        }
 
-        higlightedTiles.ForEach(tile => {
-            if (tile.name == "TileKing") {
-                tile.tag = TileTags.King;
-            } else if (tile.name == "TileHaven") {
-                tile.tag = TileTags.Haven;
-            }
-
-            if (tile.CompareTag(TileTags.Highlight)) {
-                tile.tag = TileTags.Accessible;
-            }
-
-            tile.GetComponent<Renderer>().material.color = Color.white;
-        });
+        HighlightedTiles.Clear();
     }
 }
