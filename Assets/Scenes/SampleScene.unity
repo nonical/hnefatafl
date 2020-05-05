@@ -13231,7 +13231,7 @@ PrefabInstance:
     - target: {fileID: 3612186469149188330, guid: eeb66ca10787f494d8f4fc7bb21e16f2,
         type: 3}
       propertyPath: m_TagString
-      value: KingTile
+      value: tileKing
       objectReference: {fileID: 0}
     - target: {fileID: 3612186469149188330, guid: eeb66ca10787f494d8f4fc7bb21e16f2,
         type: 3}

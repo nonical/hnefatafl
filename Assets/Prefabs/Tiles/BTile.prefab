@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -2338713811595922734}
   m_Layer: 0
   m_Name: BTile
-  m_TagString: Spawn_Team_B
+  m_TagString: tileSpawnB
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
