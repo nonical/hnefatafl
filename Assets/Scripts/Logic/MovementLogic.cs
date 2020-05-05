@@ -1,15 +1,13 @@
 ﻿using System;
 using System.Linq;
+using Tags;
 using UnityEngine;
 
-public class MovementLogic : MonoBehaviour {
-    [SerializeField]
-    Material MaterialA, MaterialB, MaterialKing, MaterialTile, MaterialDeath, MaterialHighlight;
-
+public static class MovementLogic {
     public static Action<GameObject, (int i, int j)> FigureMoved;
 
     public static void MovePiece(GameObject figure, GameObject destinationTile) {
-        // don't allow moving to occupied tile
+        // restrict movement to occupied tile
         if (destinationTile.GetComponent<Tile>().isOccupied) return;
 
         // note: figures and tiles matrices have same indexes
@@ -28,14 +26,14 @@ public class MovementLogic : MonoBehaviour {
 
     public static void HighlightViableMoves(GameObject figure) {
         var origin = GameMemory.GetIndices(figure);
-        bool isKing = figure.CompareTag("King");
+        bool isKing = figure.CompareTag(FigureTags.King);
 
         Action<GameObject> ColorTile = (GameObject tile) => {
             // only the King may visit the refugee tiles
-            if ((tile.CompareTag("DeathTile") || tile.CompareTag("KingTile")) && isKing == false) return;
+            if ((tile.CompareTag(TileTags.Haven) || tile.CompareTag(TileTags.King)) && isKing == false) return;
 
             tile.GetComponent<Renderer>().material.color = Color.green;
-            tile.gameObject.tag = "Highlight";
+            tile.gameObject.tag = TileTags.Highlight;
         };
 
         // reset any existing highlighting
@@ -79,27 +77,20 @@ public class MovementLogic : MonoBehaviour {
     }
 
     public static void resetHighlight() {
-        var higlightedTiles = GameObject.FindGameObjectsWithTag("Highlight").ToList();
-        var materialProvider = GameObject.Find("MaterialProvider").GetComponent<MaterialProvider>();
+        var higlightedTiles = GameObject.FindGameObjectsWithTag(TileTags.Highlight).ToList();
 
         higlightedTiles.ForEach(tile => {
-            if (tile.name.StartsWith("ATile")) {
-                tile.GetComponent<Renderer>().material = materialProvider.MaterialA;
-            } else if (tile.name.StartsWith("BTile")) {
-                tile.GetComponent<Renderer>().material = materialProvider.MaterialB;
-            } else if (tile.name.StartsWith("KingTile")) {
-                tile.GetComponent<Renderer>().material = materialProvider.MaterialKing;
-                tile.tag = "KingTile";
+            if (tile.name.StartsWith("KingTile")) {
+                tile.tag = TileTags.King;
             } else if (tile.name.StartsWith("DeathTile")) {
-                tile.GetComponent<Renderer>().material = materialProvider.MaterialDeath;
-                tile.tag = "DeathTile";
-            } else {
-                tile.GetComponent<Renderer>().material = materialProvider.MaterialTile;
+                tile.tag = TileTags.Haven;
             }
 
-            if (tile.CompareTag("Highlight")) {
-                tile.tag = "AT";
+            if (tile.CompareTag(TileTags.Highlight)) {
+                tile.tag = TileTags.Accessible;
             }
+
+            tile.GetComponent<Renderer>().material.color = Color.white;
         });
     }
 }
