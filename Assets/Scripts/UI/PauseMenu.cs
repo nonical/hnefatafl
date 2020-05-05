@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour {
     public GameObject pieceManager;
     public GameObject pauseMenuUI;
+    public GameObject gameFinishedUI;
     public bool isGamePaused = false;
 
     void Update() {
@@ -11,7 +12,8 @@ public class PauseMenu : MonoBehaviour {
             if (isGamePaused) {
                 Resume();
             } else {
-                Pause();
+                if (!gameFinishedUI.activeSelf)
+                     Pause();
             }
         }
     }
