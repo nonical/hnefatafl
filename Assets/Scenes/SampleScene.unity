@@ -5344,6 +5344,7 @@ GameObject:
   - component: {fileID: 866276684}
   - component: {fileID: 866276683}
   - component: {fileID: 866276687}
+  - component: {fileID: 866276688}
   m_Layer: 5
   m_Name: MenuCanvas
   m_TagString: Untagged
@@ -5447,6 +5448,20 @@ MonoBehaviour:
   pieceManager: {fileID: 530545777}
   pauseMenuUI: {fileID: 1053021033}
   isGamePaused: 0
+--- !u!114 &866276688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866276682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3bd8b356b1e434db31822cfd2cf242, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pieceManager: {fileID: 530545777}
+  gameFinishedUI: {fileID: 959557333}
 --- !u!4 &866382980 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6278721750463872511, guid: 41c6e35345a03c54f871afae0683531c,
