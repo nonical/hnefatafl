@@ -6,7 +6,7 @@
     }
 
     struct TileTags {
-        public static string Accessible { get; } = "tileAccessible";
+        public static string Accessible { get; } = "tileDefault";
         public static string SpawnA { get; } = "tileSpawnA";
         public static string SpawnB { get; } = "tileSpawnB";
         public static string King { get; } = "tileKing";

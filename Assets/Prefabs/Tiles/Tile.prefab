@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 3543013353551478414}
   - component: {fileID: 1395561537912355884}
   m_Layer: 0
-  m_Name: Cube
-  m_TagString: tileAccessible
+  m_Name: Tile
+  m_TagString: tileDefault
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -109,3 +109,4 @@ MonoBehaviour:
   i: 0
   j: 0
   isOccupied: 0
+  isHighlighted: 0
