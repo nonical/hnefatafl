@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Tags;
+using UnityEngine;
 
 public class InputManagement : MonoBehaviour {
     private Transform selectedPiece;
@@ -24,7 +25,7 @@ public class InputManagement : MonoBehaviour {
                 if (pieceMoving) return;
 
                 // on figure click
-                if (selection.CompareTag("Selectable") || selection.CompareTag("King")) {
+                if (selection.CompareTag(FigureTags.TeamA) || selection.CompareTag(FigureTags.TeamB) || selection.CompareTag(FigureTags.King)) {
                     if (isAttackerTurn && !selection.name.StartsWith("playerA") || !isAttackerTurn && (selection.name.StartsWith("playerA"))) {
                         return;
                     }
@@ -37,8 +38,8 @@ public class InputManagement : MonoBehaviour {
                 if (selectedPiece == null) return;
 
                 // on tile click
-                if (selection.CompareTag("Highlight") ||
-                    ((selection.CompareTag("KingTile") || selection.CompareTag("DeathTile")) && selectedPiece.CompareTag("King"))) {
+                if (selection.CompareTag(TileTags.Highlight) || ((selection.CompareTag(TileTags.King) || selection.CompareTag(TileTags.Haven)) &&
+                    selectedPiece.CompareTag(FigureTags.King))) {
                     pieceMoving = true;
                     MovementLogic.MovePiece(selectedPiece.gameObject, selection.gameObject);
                 };

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Tags;
 using UnityEngine;
 
 public class TakingLogic : MonoBehaviour {
@@ -14,25 +15,25 @@ public class TakingLogic : MonoBehaviour {
     void CheckTaking(GameObject player, (int, int) indices) {
         Func<GameObject, GameObject, bool> TakeLogic = (GameObject tile, GameObject figure) => {
             // tile must be either: a) occupied, b) not occupied and be a refugee tile
-            if (!tile.GetComponent<Tile>().isOccupied && !tile.CompareTag("DeathTile") && !tile.CompareTag("KingTile")) {
+            if (!tile.GetComponent<Tile>().isOccupied && !tile.CompareTag(TileTags.Haven) && !tile.CompareTag(TileTags.King)) {
                 return false;
             }
 
             // the attacking team can only use the King's tile as an anvil if it's not occupied
-            if (player.name.StartsWith("playerA") && tile.CompareTag("KingTile") && tile.GetComponent<Tile>().isOccupied) {
+            if (player.name.StartsWith("playerA") && tile.CompareTag(TileTags.King) && tile.GetComponent<Tile>().isOccupied) {
                 return false;
             }
 
             // taking can be done with: a) two pieces of the same team, b) one piece and a refugee tile,
             // c) one piece of the defending team and the King
-            if (figure?.name == player.name || tile.CompareTag("DeathTile") || tile.CompareTag("KingTile")
-                || (player.name.StartsWith("playerB") && figure.CompareTag("King"))
-                || (player.name.StartsWith("playerKing") && figure.name.StartsWith("playerB"))) {
+            if (figure?.name == player.name || tile.CompareTag(TileTags.Haven) || tile.CompareTag(TileTags.King) ||
+               (player.name.StartsWith("playerB") && figure.CompareTag(FigureTags.King)) ||
+               (figure.CompareTag(FigureTags.King) && figure.name.StartsWith("playerB"))) {
                 if (FigureList.Count > 0) {
                     player.GetComponent<Piece>().AttackAnimation();
 
-                    //if the King is captured - defenders lose
-                    if (FigureList.Any(x => x.CompareTag("King"))) {
+                    // if the King is captured - defenders lose
+                    if (FigureList.Any(x => x.CompareTag(FigureTags.King))) {
                         WinConditions.AttackersWin?.Invoke();
                     }
 
