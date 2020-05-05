@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -6843375469112219382}
   m_Layer: 0
   m_Name: DeathTile
-  m_TagString: DeathTile
+  m_TagString: tileHaven
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

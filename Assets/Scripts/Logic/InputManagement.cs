@@ -26,7 +26,7 @@ public class InputManagement : MonoBehaviour {
 
                 // on figure click
                 if (selection.CompareTag(FigureTags.TeamA) || selection.CompareTag(FigureTags.TeamB) || selection.CompareTag(FigureTags.King)) {
-                    if (isAttackerTurn && !selection.name.StartsWith("playerA") || !isAttackerTurn && (selection.name.StartsWith("playerA"))) {
+                    if (isAttackerTurn && !selection.CompareTag(FigureTags.TeamA) || !isAttackerTurn && selection.CompareTag(FigureTags.TeamA)) {
                         return;
                     }
 

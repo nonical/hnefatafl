@@ -4,14 +4,15 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Selectable
-  - AT
-  - Spawn_Team_A
-  - Spawn_Team_B
-  - KingTile
-  - DeathTile
-  - King
-  - Highlight
+  - playerA
+  - playerB
+  - playerKing
+  - tileAccessible
+  - tileSpawnA
+  - tileSpawnB
+  - tileKing
+  - tileHaven
+  - tileHighlight
   layers:
   - Default
   - TransparentFX

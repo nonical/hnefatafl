@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Tags;
 using UnityEngine;
 
 public class GameMemory : MonoBehaviour {
@@ -26,8 +27,8 @@ public class GameMemory : MonoBehaviour {
 
         for (int i = 0; i < 11; i++) {
             for (int j = 0; j < 11; j++) {
-                if (Tiles[i, j].CompareTag("Spawn_Team_A") || Tiles[i, j].CompareTag("Spawn_Team_B")) {
-                    Tiles[i, j].tag = "AT";
+                if (Tiles[i, j].CompareTag(TileTags.SpawnA) || Tiles[i, j].CompareTag(TileTags.SpawnB)) {
+                    Tiles[i, j].tag = TileTags.Accessible;
                 }
             }
         }
@@ -62,23 +63,23 @@ public class GameMemory : MonoBehaviour {
     GameObject MakeNewFigure(GameObject tile) {
         GameObject figure = null;
 
-        if (tile.CompareTag("DeathTile") || tile.CompareTag("AT")) {
+        if (tile.CompareTag(TileTags.Haven) || tile.CompareTag(TileTags.Accessible)) {
             return null;
         }
 
-        if (tile.CompareTag("KingTile")) {
+        if (tile.CompareTag(TileTags.King)) {
             figure = Instantiate(PlayerKing_Prefab);
         }
 
-        if (tile.CompareTag("Spawn_Team_A")) {
+        if (tile.CompareTag(TileTags.SpawnA)) {
             figure = Instantiate(PlayerA_Prefab);
         }
 
-        if (tile.CompareTag("Spawn_Team_B")) {
+        if (tile.CompareTag(TileTags.SpawnB)) {
             figure = Instantiate(PlayerB_Prefab);
         }
 
-        figure.transform.SetParent(tile.CompareTag("Spawn_Team_A") ? TeamA : TeamB);
+        figure.transform.SetParent(tile.CompareTag(TileTags.SpawnA) ? TeamA : TeamB);
         figure.transform.position = new Vector3(tile.transform.position.x, tile.transform.position.y + spawnHeightOffset, tile.transform.position.z);
 
         figure.GetComponent<IndexedObject>().i = tile.GetComponent<Tile>().i;
