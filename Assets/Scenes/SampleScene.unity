@@ -5447,6 +5447,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pieceManager: {fileID: 530545777}
   pauseMenuUI: {fileID: 1053021033}
+  gameFinishedUI: {fileID: 959557333}
   isGamePaused: 0
 --- !u!114 &866276688
 MonoBehaviour:
