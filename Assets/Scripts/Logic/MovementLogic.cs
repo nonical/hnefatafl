@@ -78,26 +78,19 @@ public static class MovementLogic {
 
     public static void resetHighlight() {
         var higlightedTiles = GameObject.FindGameObjectsWithTag(TileTags.Highlight).ToList();
-        var materialProvider = GameObject.Find("MaterialProvider").GetComponent<MaterialProvider>();
 
         higlightedTiles.ForEach(tile => {
-            if (tile.name.StartsWith("ATile")) {
-                tile.GetComponent<Renderer>().material = materialProvider.MaterialA;
-            } else if (tile.name.StartsWith("BTile")) {
-                tile.GetComponent<Renderer>().material = materialProvider.MaterialB;
-            } else if (tile.name.StartsWith("KingTile")) {
-                tile.GetComponent<Renderer>().material = materialProvider.MaterialKing;
+            if (tile.name.StartsWith("KingTile")) {
                 tile.tag = TileTags.King;
             } else if (tile.name.StartsWith("DeathTile")) {
-                tile.GetComponent<Renderer>().material = materialProvider.MaterialDeath;
                 tile.tag = TileTags.Haven;
-            } else {
-                tile.GetComponent<Renderer>().material = materialProvider.MaterialTile;
             }
 
             if (tile.CompareTag(TileTags.Highlight)) {
                 tile.tag = TileTags.Accessible;
             }
+
+            tile.GetComponent<Renderer>().material.color = Color.white;
         });
     }
 }
