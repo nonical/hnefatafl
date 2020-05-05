@@ -1,8 +1,8 @@
 ﻿namespace Tags {
     struct FigureTags {
-        public static string TeamA { get; } = "Selectable";
-        public static string TeamB { get; } = "Selectable";
-        public static string King { get; } = "King";
+        public static string TeamA { get; } = "playerA";
+        public static string TeamB { get; } = "playerB";
+        public static string King { get; } = "playerKing";
     }
 
     struct TileTags {
