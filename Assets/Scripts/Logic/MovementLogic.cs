@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Linq;
-using Boo.Lang;
+using System.Collections.Generic;
 using Tags;
 using UnityEngine;
-using UnityEngine.UI;
 
 public static class MovementLogic {
     private static readonly List<Tile> HighlightedTiles = new List<Tile>();
@@ -83,10 +81,7 @@ public static class MovementLogic {
     }
 
     public static void resetHighlight() {
-        foreach (var tile in HighlightedTiles) {
-            tile.ToggleHighlight(false);
-        }
-
+        HighlightedTiles.ForEach(tile => tile.ToggleHighlight(false));
         HighlightedTiles.Clear();
     }
 }

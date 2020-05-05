@@ -13,7 +13,7 @@ public class PauseMenu : MonoBehaviour {
                 Resume();
             } else {
                 if (!gameFinishedUI.activeSelf) {
-                     Pause();
+                    Pause();
                 }
             }
         }
