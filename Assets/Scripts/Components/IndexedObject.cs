@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
 
-public class IndexedObject : MonoBehaviour {
+public abstract class IndexedObject : MonoBehaviour {
     public int i, j;
 }
