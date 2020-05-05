@@ -20,15 +20,15 @@ public class TakingLogic : MonoBehaviour {
             }
 
             // the attacking team can only use the King's tile as an anvil if it's not occupied
-            if (player.name.StartsWith("playerA") && tile.CompareTag(TileTags.King) && tile.GetComponent<Tile>().isOccupied) {
+            if (player.CompareTag(FigureTags.TeamA) && tile.CompareTag(TileTags.King) && tile.GetComponent<Tile>().isOccupied) {
                 return false;
             }
 
             // taking can be done with: a) two pieces of the same team, b) one piece and a refugee tile,
             // c) one piece of the defending team and the King
-            if (figure?.name == player.name || tile.CompareTag(TileTags.Haven) || tile.CompareTag(TileTags.King) ||
-               (player.name.StartsWith("playerB") && figure.CompareTag(FigureTags.King)) ||
-               (figure.CompareTag(FigureTags.King) && figure.name.StartsWith("playerB"))) {
+            if (figure.CompareTag(player.tag) || tile.CompareTag(TileTags.Haven) || tile.CompareTag(TileTags.King) ||
+               (player.CompareTag(FigureTags.TeamB) && figure.CompareTag(FigureTags.King)) ||
+               (figure.CompareTag(FigureTags.King) && player.CompareTag(FigureTags.TeamB))) {
                 if (FigureList.Count > 0) {
                     player.GetComponent<Piece>().AttackAnimation();
 
