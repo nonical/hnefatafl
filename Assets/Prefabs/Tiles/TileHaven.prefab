@@ -11,7 +11,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 0683f2780e5a0844091e6fe3b46f2267, type: 2}
+      objectReference: {fileID: 2100000, guid: 4a5989ba6a6f0ce4bb3df6a55476ca8e, type: 2}
     - target: {fileID: 3543013353551478411, guid: 4efaa829037d8634789c98665523110e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -70,7 +70,7 @@ PrefabInstance:
     - target: {fileID: 3543013353551478415, guid: 4efaa829037d8634789c98665523110e,
         type: 3}
       propertyPath: m_Name
-      value: CubeHaven
+      value: TileHaven
       objectReference: {fileID: 0}
     - target: {fileID: 3543013353551478415, guid: 4efaa829037d8634789c98665523110e,
         type: 3}
