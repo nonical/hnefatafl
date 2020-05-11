@@ -110,3 +110,4 @@ MonoBehaviour:
   j: 0
   isOccupied: 0
   isHighlighted: 0
+  HighlightMaterial: {fileID: 2100000, guid: f87426f083948ca4aa616e243ff6488a, type: 2}
