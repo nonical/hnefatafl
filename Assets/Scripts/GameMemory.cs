@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Tags;
 using UnityEngine;
 
@@ -16,6 +16,8 @@ public class GameMemory : MonoBehaviour {
 
     public static bool Multiplayer = false;
     public static bool AttackerTurn = true;
+    public static TeamTag teamTag = TeamTag.Attackers;
+
     void Start() {
         LoadSpawnDirections();
 
