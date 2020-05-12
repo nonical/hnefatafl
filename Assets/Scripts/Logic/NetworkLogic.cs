@@ -1,12 +1,23 @@
 ﻿using Mirror;
 using UnityEngine;
+using Open.Nat;
 
 public class NetworkLogic : MonoBehaviour {
+    Mapping port = new Mapping(Protocol.Tcp, 7777, 7777);
+    NatDevice device;
+
     public class MoveMessage : MessageBase {
         public int originI;
         public int originJ;
         public int destI;
         public int destJ;
+    }
+
+    private async void Awake() {
+        NatDiscoverer discoverer = new NatDiscoverer();
+
+        device = await discoverer.DiscoverDeviceAsync();
+        await device.CreatePortMapAsync(port);
     }
 
     private void Start() {
@@ -38,5 +49,9 @@ public class NetworkLogic : MonoBehaviour {
         };
 
         NetworkClient.Send(msg);
+    }
+
+    private async void OnDestroy() {
+        await device.DeletePortMapAsync(port);
     }
 }
