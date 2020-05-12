@@ -28,7 +28,7 @@ public class TakingLogic : MonoBehaviour {
             // c) one piece of the defending team and the King
             if (figure == null || figure.CompareTag(player.tag) || tile.CompareTag(TileTags.Haven) || tile.CompareTag(TileTags.King) ||
                (player.CompareTag(FigureTags.TeamB) && figure.CompareTag(FigureTags.King)) ||
-               (figure.CompareTag(FigureTags.King) && player.CompareTag(FigureTags.TeamB))) {
+               (player.CompareTag(FigureTags.King) && figure.CompareTag(FigureTags.TeamB))) {
                 if (FigureList.Count > 0) {
                     player.GetComponent<Piece>().AttackAnimation();
 
