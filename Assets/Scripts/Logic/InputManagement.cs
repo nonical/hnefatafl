@@ -3,22 +3,22 @@ using UnityEngine;
 
 public class InputManagement : MonoBehaviour {
     private Transform selectedPiece;
-    private bool isAttackerTurn = true;
     private bool pieceMoving = false;
+    private NetworkLogic networkLogic;
 
     private void Start() {
         MovementLogic.FigureMoved += (GameObject _, (int, int) __) => {
-            isAttackerTurn = !isAttackerTurn;
             pieceMoving = false;
             selectedPiece = null;
         };
+
+        networkLogic = GetComponent<NetworkLogic>();
     }
 
     void Update() {
         var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-        RaycastHit hit;
-        if (Physics.Raycast(ray, out hit)) {
+        if (Physics.Raycast(ray, out RaycastHit hit)) {
             var selection = hit.transform;
 
             if (Input.GetMouseButtonDown(0)) {
@@ -26,8 +26,14 @@ public class InputManagement : MonoBehaviour {
 
                 // on figure click
                 if (selection.CompareTag(FigureTags.TeamA) || selection.CompareTag(FigureTags.TeamB) || selection.CompareTag(FigureTags.King)) {
-                    if (isAttackerTurn && !selection.CompareTag(FigureTags.TeamA) || !isAttackerTurn && selection.CompareTag(FigureTags.TeamA)) {
+                    if (GameMemory.AttackerTurn && !selection.CompareTag(FigureTags.TeamA) ||
+                        !GameMemory.AttackerTurn && selection.CompareTag(FigureTags.TeamA)) {
                         return;
+                    }
+
+                    if (GameMemory.Multiplayer) {
+                        if (GameMemory.teamTag == TeamTag.Attackers && !selection.CompareTag(FigureTags.TeamA)) return;
+                        if (GameMemory.teamTag == TeamTag.Defenders && selection.CompareTag(FigureTags.TeamA)) return;
                     }
 
                     selectedPiece = selection;
@@ -41,7 +47,12 @@ public class InputManagement : MonoBehaviour {
                 // on tile click
                 if (selection.GetComponent<Tile>().isHighlighted) {
                     pieceMoving = true;
-                    MovementLogic.MovePiece(selectedPiece.gameObject, selection.gameObject);
+
+                    if (GameMemory.Multiplayer) {
+                        networkLogic.SendMoveMessage(GameMemory.GetIndices(selectedPiece.gameObject), GameMemory.GetIndices(selection.gameObject));
+                    } else {
+                        MovementLogic.MovePiece(selectedPiece.gameObject, selection.gameObject);
+                    }
                 };
             }
         }

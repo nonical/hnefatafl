@@ -9,11 +9,14 @@ public class GameMemory : MonoBehaviour {
 
     Transform Inner, TeamA, TeamB;
 
-    [SerializeField]
-    GameObject PlayerA_Prefab, PlayerB_Prefab, PlayerKing_Prefab;
+    public GameObject PlayerA_Prefab, PlayerB_Prefab, PlayerKing_Prefab;
 
-    [SerializeField, Range(1, 10)]
-    float spawnHeightOffset;
+    [Range(0.5f, 10)]
+    public float spawnHeightOffset = 5;
+
+    public static bool Multiplayer = false;
+    public static bool AttackerTurn = true;
+    public static TeamTag teamTag = TeamTag.Attackers;
 
     void Start() {
         LoadSpawnDirections();
@@ -110,6 +113,9 @@ public class GameMemory : MonoBehaviour {
         // change indices in figure's IndexedObject component
         figure.GetComponent<Piece>().i = dest.i;
         figure.GetComponent<Piece>().j = dest.j;
+
+        // change turn
+        AttackerTurn = !AttackerTurn;
     }
 
     static void LoadSpawnDirections() {
