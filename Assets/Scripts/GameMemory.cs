@@ -19,9 +19,6 @@ public class GameMemory : MonoBehaviour {
     public static TeamTag teamTag = TeamTag.Attackers;
 
     void Start() {
-
-        Time.timeScale = 0f; //freeze time, unfreeze when user clicks local/online game
-
         LoadSpawnDirections();
 
         Inner = transform.GetChild(0).GetChild(0);
