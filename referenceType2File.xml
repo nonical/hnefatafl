@@ -1,0 +1,1250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfTypeDate xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <TypeDate>
+    <guid>842f43ac94b4b4f72ac0898650ddcc44</guid>
+    <fileName>Assets/Cleaner/Editor/AssetCollector.cs</fileName>
+    <timeStamp>2017-03-16T21:41:26+01:00</timeStamp>
+    <typeFullName>
+      <string>AssetClean.AssetCollector</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>805140a4856714e288ea84985d3023df</guid>
+    <fileName>Assets/Cleaner/Editor/AssetReferenceCollection.cs</fileName>
+    <timeStamp>2017-03-16T21:41:26+01:00</timeStamp>
+    <typeFullName>
+      <string>AssetReferenceCollection</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>202c278a17939b24c8b79c0ee1f94d8f</guid>
+    <fileName>Assets/Cleaner/Editor/ClassReferenceCollection.cs</fileName>
+    <timeStamp>2017-03-16T21:41:26+01:00</timeStamp>
+    <typeFullName>
+      <string>AssetClean.ClassReferenceCollection</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>0d05386265df34bac8d0b6df44aa494c</guid>
+    <fileName>Assets/Cleaner/Editor/CollectionData.cs</fileName>
+    <timeStamp>2017-03-16T21:44:11+01:00</timeStamp>
+    <typeFullName>
+      <string>CollectionData</string>
+      <string>TypeDate</string>
+      <string>IReferenceCollection</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>74eec3bfba0594259ac2843353c082a3</guid>
+    <fileName>Assets/Cleaner/Editor/FindUnusedAssetsWindow.cs</fileName>
+    <timeStamp>2017-03-16T21:41:26+01:00</timeStamp>
+    <typeFullName>
+      <string>AssetClean.FindUnusedAssetsWindow</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>2c4f01a79a77a45a9a84004cc2b78098</guid>
+    <fileName>Assets/Cleaner/Editor/ShaderReferenceCollection.cs</fileName>
+    <timeStamp>2017-03-16T21:41:26+01:00</timeStamp>
+    <typeFullName>
+      <string>AssetClean.ShaderReferenceCollection</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>03d835f862f58074b859165457db4dde</guid>
+    <fileName>Assets/Laterns and candles/scripts/CameraFacing.cs</fileName>
+    <timeStamp>2017-06-16T20:13:43+02:00</timeStamp>
+    <typeFullName>
+      <string>CameraFacing</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>ca793ce0507b19646ab8e031decc012b</guid>
+    <fileName>Assets/Laterns and candles/scripts/ExtendedFlycam.cs</fileName>
+    <timeStamp>2017-06-16T20:17:11+02:00</timeStamp>
+    <typeFullName>
+      <string>ExtendedFlycam</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>28496b776660156428f00cf78289c1ec</guid>
+    <fileName>Assets/Mirror/Authenticators/BasicAuthenticator.cs</fileName>
+    <timeStamp>2020-05-13T14:26:04.9876998+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>24d8269a07b8e4edfa374753a91c946e</guid>
+    <fileName>Assets/Mirror/Authenticators/TimeoutAuthenticator.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.0116925+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f1d66fe74ec6f42dd974cba37d25d453</guid>
+    <fileName>Assets/Mirror/CompilerSymbols/PreprocessorDefine.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.0356851+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7f6f3bf89aa97405989c802ba270f815</guid>
+    <fileName>Assets/Mirror/Components/NetworkAnimator.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.1246559+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a4c96e6dd99826849ab1431f94547141</guid>
+    <fileName>Assets/Mirror/Components/NetworkLobbyManager.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.133654+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>777a368af85f2e84da7ea5666581921b</guid>
+    <fileName>Assets/Mirror/Components/NetworkLobbyPlayer.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.1756404+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>1020a74962faada4b807ac5dc053a4cf</guid>
+    <fileName>Assets/Mirror/Components/NetworkMatchChecker.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.1816381+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>1731d8de2d0c84333b08ebe1e79f4118</guid>
+    <fileName>Assets/Mirror/Components/NetworkProximityChecker.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.1956334+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>615e6c6589cf9e54cad646b5a11e0529</guid>
+    <fileName>Assets/Mirror/Components/NetworkRoomManager.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.2146272+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>79874ac94d5b1314788ecf0e86bd23fd</guid>
+    <fileName>Assets/Mirror/Components/NetworkRoomPlayer.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.2286229+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b7fdb599e1359924bad6255660370252</guid>
+    <fileName>Assets/Mirror/Components/NetworkSceneChecker.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.2466171+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>2f74aedd71d9a4f55b3ce499326d45fb</guid>
+    <fileName>Assets/Mirror/Components/NetworkTransform.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.249617+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>2e77294d8ccbc4e7cb8ca2bd0d3e99ea</guid>
+    <fileName>Assets/Mirror/Components/NetworkTransformBase.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.2616124+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>734b48bea0b204338958ee3d885e11f0</guid>
+    <fileName>Assets/Mirror/Components/NetworkTransformChild.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.2746084+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c761308e733c51245b2e8bb4201f46dc</guid>
+    <fileName>Assets/Mirror/Components/Discovery/NetworkDiscovery.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.0566777+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b9971d60ce61f4e39b07cd9e7e0c68fa</guid>
+    <fileName>Assets/Mirror/Components/Discovery/NetworkDiscoveryBase.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.0636763+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>88c37d3deca7a834d80cfd8d3cfcc510</guid>
+    <fileName>Assets/Mirror/Components/Discovery/NetworkDiscoveryHUD.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.0806702+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ea7254bf7b9454da4adad881d94cd141</guid>
+    <fileName>Assets/Mirror/Components/Discovery/ServerRequest.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.0896671+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>36f97227fdf2d7a4e902db5bfc43039c</guid>
+    <fileName>Assets/Mirror/Components/Discovery/ServerResponse.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.0956661+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b15a0d2ca0909400eb53dd6fe894cddd</guid>
+    <fileName>Assets/Mirror/Editor/EnterPlayModeSettingsCheck.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.2896033+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>047c894c2a5ccc1438b7e59302f62744</guid>
+    <fileName>Assets/Mirror/Editor/InspectorHelper.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.2986004+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c3dbf48190d77d243b87962a82c3b164</guid>
+    <fileName>Assets/Mirror/Editor/LogLevelWindow.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.3125963+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f02853db46b6346e4866594a96c3b0e7</guid>
+    <fileName>Assets/Mirror/Editor/NetworkBehaviourInspector.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.3655791+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>51a99294efe134232932c34606737356</guid>
+    <fileName>Assets/Mirror/Editor/NetworkInformationPreview.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.3815741+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>519712eb07f7a44039df57664811c2c5</guid>
+    <fileName>Assets/Mirror/Editor/NetworkManagerEditor.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.3825733+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a3ec1c414d821444a9e77f18a2c130ea</guid>
+    <fileName>Assets/Mirror/Editor/NetworkScenePostProcess.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.412564+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b24704a46211b4ea294aba8f58715cea</guid>
+    <fileName>Assets/Mirror/Editor/SceneDrawer.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.412564+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>27821afc81c4d064d8348fbeb00c0ce8</guid>
+    <fileName>Assets/Mirror/Editor/SyncVarAttributeDrawer.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.422561+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>929924d95663264478d4238d4910d22e</guid>
+    <fileName>Assets/Mirror/Editor/Weaver/AssemblyInfo.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.4405549+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>de2aeb2e8068f421a9a1febe408f7051</guid>
+    <fileName>Assets/Mirror/Editor/Weaver/CompilationFinishedHook.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.4555503+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>562a5cf0254cc45738e9aa549a7100b2</guid>
+    <fileName>Assets/Mirror/Editor/Weaver/Extensions.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.4595489+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>6c4ed76daf48547c5abb7c58f8d20886</guid>
+    <fileName>Assets/Mirror/Editor/Weaver/Helpers.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.469546+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>2a21c60c40a4c4d679c2b71a7c40882e</guid>
+    <fileName>Assets/Mirror/Editor/Weaver/Program.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.7694716+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>be40277098a024539bf63d0205cae824</guid>
+    <fileName>Assets/Mirror/Editor/Weaver/Readers.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.7854664+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>3039a59c76aec43c797ad66930430367</guid>
+    <fileName>Assets/Mirror/Editor/Weaver/Resolvers.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.787466+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>de160f52931054064852f2afd7e7a86f</guid>
+    <fileName>Assets/Mirror/Editor/Weaver/Weaver.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.8134576+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a90060ad76ea044aba613080dd922709</guid>
+    <fileName>Assets/Mirror/Editor/Weaver/Writers.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.815457+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>73f6c9cdbb9e54f65b3a0a35cc8e55c2</guid>
+    <fileName>Assets/Mirror/Editor/Weaver/Processors/CommandProcessor.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.5055341+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>fd67b3f7c2d66074a9bc7a23787e2ffb</guid>
+    <fileName>Assets/Mirror/Editor/Weaver/Processors/GenericArgumentResolver.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.5185302+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>3544c9f00f6e5443ea3c30873c5a06ef</guid>
+    <fileName>Assets/Mirror/Editor/Weaver/Processors/MessageClassProcessor.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.5385238+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>661e1af528e3441f79e1552fb5ec4e0e</guid>
+    <fileName>Assets/Mirror/Editor/Weaver/Processors/MethodProcessor.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.5465211+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>35c16722912b64af894e4f6668f2e54c</guid>
+    <fileName>Assets/Mirror/Editor/Weaver/Processors/MonoBehaviourProcessor.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.556518+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8118d606be3214e5d99943ec39530dd8</guid>
+    <fileName>Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.5655156+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d48f1ab125e9940a995603796bccc59e</guid>
+    <fileName>Assets/Mirror/Editor/Weaver/Processors/PropertySiteProcessor.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.5795106+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f3263602f0a374ecd8d08588b1fc2f76</guid>
+    <fileName>Assets/Mirror/Editor/Weaver/Processors/ReaderWriterProcessor.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.5905072+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a3cb7051ff41947e59bba58bdd2b73fc</guid>
+    <fileName>Assets/Mirror/Editor/Weaver/Processors/RpcProcessor.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.6154991+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>024f251bf693bb345b90b9177892d534</guid>
+    <fileName>Assets/Mirror/Editor/Weaver/Processors/ServerClientAttributeProcessor.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.6144994+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>29e4a45f69822462ab0b15adda962a29</guid>
+    <fileName>Assets/Mirror/Editor/Weaver/Processors/SyncDictionaryProcessor.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.6284956+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a5d8b25543a624384944b599e5a832a8</guid>
+    <fileName>Assets/Mirror/Editor/Weaver/Processors/SyncEventProcessor.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.6514881+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>97068e5d8cc14490b85933feb119d827</guid>
+    <fileName>Assets/Mirror/Editor/Weaver/Processors/SyncListInitializer.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.6524872+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4f3445268e45d437fac325837aff3246</guid>
+    <fileName>Assets/Mirror/Editor/Weaver/Processors/SyncListProcessor.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.6764817+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>28fb192f6a9bc1247b90aa4710f6d34f</guid>
+    <fileName>Assets/Mirror/Editor/Weaver/Processors/SyncListStructProcessor.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.6784793+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d02219b00b3674e59a2151f41e791688</guid>
+    <fileName>Assets/Mirror/Editor/Weaver/Processors/SyncObjectInitializer.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.7084961+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>78f71efc83cde4917b7d21efa90bcc9a</guid>
+    <fileName>Assets/Mirror/Editor/Weaver/Processors/SyncObjectProcessor.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.7114901+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f52c39bddd95d42b88f9cd554dfd9198</guid>
+    <fileName>Assets/Mirror/Editor/Weaver/Processors/SyncVarProcessor.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.7474788+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>fb3ce6c6f3f2942ae88178b86f5a8282</guid>
+    <fileName>Assets/Mirror/Editor/Weaver/Processors/TargetRpcProcessor.cs</fileName>
+    <timeStamp>2020-05-13T14:26:05.7474788+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>34d1daf9e7dbcb64aa647cb332054ea6</guid>
+    <fileName>Assets/Mirror/Examples/AdditiveScenes/Scripts/AdditiveNetworkManager.cs</fileName>
+    <timeStamp>2020-05-05T19:38:24+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e8f68561248aaca4fb96847ce24742ee</guid>
+    <fileName>Assets/Mirror/Examples/AdditiveScenes/Scripts/PlayerController.cs</fileName>
+    <timeStamp>2020-05-05T19:39:46+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>42d1f80407105ee4f960f0b51e89452d</guid>
+    <fileName>Assets/Mirror/Examples/AdditiveScenes/Scripts/RandomColor.cs</fileName>
+    <timeStamp>2020-05-05T19:38:31+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7a25c54cd35eb284eb6b8ed19cf60443</guid>
+    <fileName>Assets/Mirror/Examples/AdditiveScenes/Scripts/ShootingTankBehaviour.cs</fileName>
+    <timeStamp>2020-05-05T19:38:55+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>884ed76587eb5854abe6b428b791fdcd</guid>
+    <fileName>Assets/Mirror/Examples/AdditiveScenes/Scripts/ZoneHandler.cs</fileName>
+    <timeStamp>2020-05-05T19:39:00+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a472ac3ae1701d149861871cf416a46d</guid>
+    <fileName>Assets/Mirror/Examples/Basic/Scripts/Player.cs</fileName>
+    <timeStamp>2020-05-05T19:39:14+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>30267752aaf3a68419dac343faaf0bb9</guid>
+    <fileName>Assets/Mirror/Examples/Benchmarks/10k/Scripts/BenchmarkNetworkManager.cs</fileName>
+    <timeStamp>2020-05-05T19:38:19+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>bd59972fb11d348209c78007b795e48c</guid>
+    <fileName>Assets/Mirror/Examples/Benchmarks/10k/Scripts/Health.cs</fileName>
+    <timeStamp>2020-05-05T19:39:31+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>9cddc2e496c474e538a494465be0192a</guid>
+    <fileName>Assets/Mirror/Examples/Benchmarks/2k NetworkTransforms/Scripts/MonsterMovement.cs</fileName>
+    <timeStamp>2020-05-05T19:39:11+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c482338c8cc6d4a3cba81934c0151972</guid>
+    <fileName>Assets/Mirror/Examples/Benchmarks/2k NetworkTransforms/Scripts/PlayerMovement.cs</fileName>
+    <timeStamp>2020-05-05T19:39:33+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d0cd72391a563461f88eb3ddf120efef</guid>
+    <fileName>Assets/Mirror/Examples/Chat/Scripts/ChatNetworkManager.cs</fileName>
+    <timeStamp>2020-05-05T19:39:39+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>2c102f62d739545269250f48327d4429</guid>
+    <fileName>Assets/Mirror/Examples/Chat/Scripts/ChatWindow.cs</fileName>
+    <timeStamp>2020-05-05T19:38:17+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>3addc5ad220944ed6888319897606739</guid>
+    <fileName>Assets/Mirror/Examples/Chat/Scripts/Player.cs</fileName>
+    <timeStamp>2020-05-05T19:38:27+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>69f796b44735c414783d66f47b150c5f</guid>
+    <fileName>Assets/Mirror/Examples/ListServer/ListServer.cs</fileName>
+    <timeStamp>2020-05-05T19:38:47+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7f24d39c9182b4098bcfd0c2546d0bf2</guid>
+    <fileName>Assets/Mirror/Examples/ListServer/UI/UIServerStatusSlot.cs</fileName>
+    <timeStamp>2020-05-05T19:38:57+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b982a1fd37427e64e8310a863d03d2c9</guid>
+    <fileName>Assets/Mirror/Examples/MultipleAdditiveScenes/Scripts/MultiSceneNetManager.cs</fileName>
+    <timeStamp>2020-05-05T19:39:29+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c709489168fec9348b7f8290ee2e8466</guid>
+    <fileName>Assets/Mirror/Examples/MultipleAdditiveScenes/Scripts/PhysicsCollision.cs</fileName>
+    <timeStamp>2020-05-05T19:39:35+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>78e3051d2c03f27429276d8a55a6d15c</guid>
+    <fileName>Assets/Mirror/Examples/MultipleAdditiveScenes/Scripts/PhysicsSimulator.cs</fileName>
+    <timeStamp>2020-05-05T19:38:53+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>479a5196564ede84791870b414a13645</guid>
+    <fileName>Assets/Mirror/Examples/MultipleAdditiveScenes/Scripts/PlayerController.cs</fileName>
+    <timeStamp>2020-05-05T19:38:34+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8be750efa9df50f47b65ae156053d149</guid>
+    <fileName>Assets/Mirror/Examples/MultipleAdditiveScenes/Scripts/PlayerScore.cs</fileName>
+    <timeStamp>2020-05-05T19:39:03+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>218520098fbe58b4b8f0963ef41953f7</guid>
+    <fileName>Assets/Mirror/Examples/MultipleAdditiveScenes/Scripts/RandomColor.cs</fileName>
+    <timeStamp>2020-05-05T19:38:10+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>10da7fdf8caa1eb4697658bf129457fa</guid>
+    <fileName>Assets/Mirror/Examples/MultipleAdditiveScenes/Scripts/Reward.cs</fileName>
+    <timeStamp>2020-05-05T19:38:02+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f522bf510b49da44caa9f3ca0ac17f3b</guid>
+    <fileName>Assets/Mirror/Examples/MultipleAdditiveScenes/Scripts/Spawner.cs</fileName>
+    <timeStamp>2020-05-05T19:39:51+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>38b5c2f743cd8034a8beeebf277c92c1</guid>
+    <fileName>Assets/Mirror/Examples/Pong/Scripts/Ball.cs</fileName>
+    <timeStamp>2020-05-05T19:38:26+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>0aa3018bb284840d6a6d0acee29ab098</guid>
+    <fileName>Assets/Mirror/Examples/Pong/Scripts/NetworkManagerPong.cs</fileName>
+    <timeStamp>2020-05-05T19:37:59+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>0748c7eda22b19845b9ce0e4d23d1021</guid>
+    <fileName>Assets/Mirror/Examples/Pong/Scripts/Player.cs</fileName>
+    <timeStamp>2020-05-05T19:37:57+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e7d8650c751710349bb9546d1697b9cb</guid>
+    <fileName>Assets/Mirror/Examples/Room/Scripts/NetworkRoomManagerExt.cs</fileName>
+    <timeStamp>2020-05-05T19:39:46+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>41fc608223969754e817c29908fdb1d3</guid>
+    <fileName>Assets/Mirror/Examples/Room/Scripts/NetworkRoomPlayerExt.cs</fileName>
+    <timeStamp>2020-05-05T19:38:30+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>24fd13686a451ad498101a604d134e39</guid>
+    <fileName>Assets/Mirror/Examples/Room/Scripts/PlayerController.cs</fileName>
+    <timeStamp>2020-05-05T19:38:12+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>1ba998ee2eff92a419f4377519caf095</guid>
+    <fileName>Assets/Mirror/Examples/Room/Scripts/PlayerScore.cs</fileName>
+    <timeStamp>2020-05-05T19:38:06+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>1e6a8bf08f02e254aa9a52ef0aaa1553</guid>
+    <fileName>Assets/Mirror/Examples/Room/Scripts/RandomColor.cs</fileName>
+    <timeStamp>2020-05-05T19:38:08+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a22f9eb8ebad79e47babf4c051a714ee</guid>
+    <fileName>Assets/Mirror/Examples/Room/Scripts/Reward.cs</fileName>
+    <timeStamp>2020-05-05T19:39:14+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>0bf5c082d04f7ea459fcd30e60b5bd70</guid>
+    <fileName>Assets/Mirror/Examples/Room/Scripts/Spawner.cs</fileName>
+    <timeStamp>2020-05-05T19:37:59+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8f49b83f111a64bc7a5275af4f6f930b</guid>
+    <fileName>Assets/Mirror/Examples/Tanks/Scripts/Projectile.cs</fileName>
+    <timeStamp>2020-05-05T19:39:04+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7deadf756194d461e9140e42d651693b</guid>
+    <fileName>Assets/Mirror/Examples/Tanks/Scripts/Tank.cs</fileName>
+    <timeStamp>2020-05-05T19:38:56+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e28d5f410e25b42e6a76a2ffc10e4675</guid>
+    <fileName>Assets/Mirror/Runtime/AssemblyInfo.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.0463831+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>96fc7967f813e4960b9119d7c2118494</guid>
+    <fileName>Assets/Mirror/Runtime/ClientScene.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.0533808+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c04c722ee2ffd49c8a56ab33667b10b0</guid>
+    <fileName>Assets/Mirror/Runtime/CustomAttributes.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.0703753+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b307f850ccbbe450295acf24d70e5c28</guid>
+    <fileName>Assets/Mirror/Runtime/DotNetCompatibility.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.0833711+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>05e858cbaa54b4ce4a48c8c7f50c1914</guid>
+    <fileName>Assets/Mirror/Runtime/ExponentialMovingAverage.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.0933684+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>afd3cca6a786d4208b1d0f7f2b168901</guid>
+    <fileName>Assets/Mirror/Runtime/FloatBytePacker.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.1023651+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a88758df7db2043d6a9d926e0b6d4191</guid>
+    <fileName>Assets/Mirror/Runtime/LocalConnections.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.1173601+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d06522432d5a44e1587967a4731cd279</guid>
+    <fileName>Assets/Mirror/Runtime/LogFactory.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.1303567+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f6928b080072948f7b2909b4025fcc79</guid>
+    <fileName>Assets/Mirror/Runtime/LogFilter.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.1473507+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>2db134099f0df4d96a84ae7a0cd9b4bc</guid>
+    <fileName>Assets/Mirror/Runtime/MessagePacker.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.1663442+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>938f6f28a6c5b48a0bbd7782342d763b</guid>
+    <fileName>Assets/Mirror/Runtime/Messages.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.1823395+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>407fc95d4a8257f448799f26cdde0c2a</guid>
+    <fileName>Assets/Mirror/Runtime/NetworkAuthenticator.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.2083315+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>655ee8cba98594f70880da5cc4dc442d</guid>
+    <fileName>Assets/Mirror/Runtime/NetworkBehaviour.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.2153287+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>abe6be14204d94224a3e7cd99dd2ea73</guid>
+    <fileName>Assets/Mirror/Runtime/NetworkClient.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.2313245+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>11ea41db366624109af1f0834bcdde2f</guid>
+    <fileName>Assets/Mirror/Runtime/NetworkConnection.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.2453194+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>bb2195f8b29d24f0680a57fde2e9fd09</guid>
+    <fileName>Assets/Mirror/Runtime/NetworkConnectionToClient.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.2543169+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>761977cbf38a34ded9dd89de45445675</guid>
+    <fileName>Assets/Mirror/Runtime/NetworkConnectionToServer.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.2783086+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c3754b39e5f8740fd93f3337b2c4274e</guid>
+    <fileName>Assets/Mirror/Runtime/NetworkDiagnostics.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.2823077+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>9b91ecbcc199f4492b9a91e820070131</guid>
+    <fileName>Assets/Mirror/Runtime/NetworkIdentity.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.2883055+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8aab4c8111b7c411b9b92cf3dbc5bd4e</guid>
+    <fileName>Assets/Mirror/Runtime/NetworkManager.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.3732787+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>6442dc8070ceb41f094e44de0bf87274</guid>
+    <fileName>Assets/Mirror/Runtime/NetworkManagerHUD.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.3092993+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>eb04e4848a2e4452aa2dbd7adb801c51</guid>
+    <fileName>Assets/Mirror/Runtime/NetworkMessage.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.315297+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>1610f05ec5bd14d6882e689f7372596a</guid>
+    <fileName>Assets/Mirror/Runtime/NetworkReader.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.3382896+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>2bacff63613ad634a98f9e4d15d29dbf</guid>
+    <fileName>Assets/Mirror/Runtime/NetworkReaderPool.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.3472862+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a5f5ec068f5604c32b160bc49ee97b75</guid>
+    <fileName>Assets/Mirror/Runtime/NetworkServer.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.3722788+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>41f84591ce72545258ea98cb7518d8b9</guid>
+    <fileName>Assets/Mirror/Runtime/NetworkStartPosition.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.3832756+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>09a0c241fc4a5496dbf4a0ab6e9a312c</guid>
+    <fileName>Assets/Mirror/Runtime/NetworkTime.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.4042686+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c08f1a030234d49d391d7223a8592f15</guid>
+    <fileName>Assets/Mirror/Runtime/NetworkVisibility.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.4042686+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>48d2207bcef1f4477b624725f075f9bd</guid>
+    <fileName>Assets/Mirror/Runtime/NetworkWriter.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.4182642+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>3f34b53bea38e4f259eb8dc211e4fdb6</guid>
+    <fileName>Assets/Mirror/Runtime/NetworkWriterPool.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.428262+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>733f020f9b76d453da841089579fd7a7</guid>
+    <fileName>Assets/Mirror/Runtime/StringHash.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.4492541+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4b346c49cfdb668488a364c3023590e2</guid>
+    <fileName>Assets/Mirror/Runtime/SyncDictionary.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.4482556+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>744fc71f748fe40d5940e04bf42b29f3</guid>
+    <fileName>Assets/Mirror/Runtime/SyncList.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.4692476+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ae226d17a0c844041aa24cc2c023dd49</guid>
+    <fileName>Assets/Mirror/Runtime/SyncObject.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.4802441+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8a31599d9f9dd4ef9999f7b9707c832c</guid>
+    <fileName>Assets/Mirror/Runtime/SyncSet.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.5062363+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b530ce39098b54374a29ad308c8e4554</guid>
+    <fileName>Assets/Mirror/Runtime/UNetwork.cs</fileName>
+    <timeStamp>2020-05-13T14:26:07.4593103+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>330c9aab13d2d42069c6ebbe582b73ca</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/FallbackTransport.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.5182319+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d333dcc8c7bd34f35896f5a9b4c9e759</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/LLAPITransport.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.5202316+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>929e3234c7db540b899f00183fc2b1fe</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/MultiplexTransport.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.5422247+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c7424c1070fad4ba2a7a96b02fbeb4bb</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/TelepathyTransport.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.7071721+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>cfffcac25d6d64ced9de620159e221b8</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/Transport.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.7131698+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a5b95294cc4ec4b15aacba57531c7985</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/Telepathy/Client.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.5552202+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c4d56322cf0e248a89103c002a505dab</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/Telepathy/Common.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.5752135+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>49f1a330755814803be5f27f493e1910</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/Telepathy/EventType.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.5832109+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>aa8d703f0b73f4d6398b76812719b68b</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/Telepathy/Logger.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.6052047+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>aedf812e9637b4f92a35db1aedca8c92</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/Telepathy/Message.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.6221997+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7a8076c43fa8d4d45831adae232d4d3c</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/Telepathy/NetworkStreamExtensions.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.6331955+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8fc06e2fb29854a0c9e90c0188d36a08</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/Telepathy/SafeQueue.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.6531889+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>fb98a16841ccc4338a7e0b4e59136563</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/Telepathy/Server.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.670184+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>64df4eaebe4ff9a43a9fb318c3e8e321</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/Telepathy/ThreadExtensions.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.6761817+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>951d08c05297f4b3e8feb5bfcab86531</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/Telepathy/Utils.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.6831794+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8f69ff0981a33445a89b5e37b245806f</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/Websocket/Client.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.7261668+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>278e08c90f2324e2e80a0fe8984b0590</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/Websocket/ClientJs.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.7381619+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b4bf9040513294fa4939bb9f2f0cda4e</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/Websocket/Server.cs</fileName>
+    <timeStamp>2020-05-13T14:26:07.4293196+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>5f039183eda8945448b822a77e2a9d0e</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs</fileName>
+    <timeStamp>2020-05-13T14:26:07.4423155+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e362254f82b2a4627bfd83394d093715</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.7571556+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>3c90b5378af58402987e8a2938d763f2</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/HttpHelper.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.8551241+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>894bb86ff9cbe4179a6764904f9dd742</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/IBufferPool.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.8741184+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>1432676d0074e4a7ca123228797fe0ac</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/IPingPongManager.cs</fileName>
+    <timeStamp>2020-05-13T14:26:07.02507+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>290e337adc73544809ef6db4d09ec5bc</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/IWebSocketClientFactory.cs</fileName>
+    <timeStamp>2020-05-13T14:26:07.0440638+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>33e062311740342db82c2f6e53fbce73</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/IWebSocketServerFactory.cs</fileName>
+    <timeStamp>2020-05-13T14:26:07.0560603+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e69d99db8e5024dda9afb8bb5d494260</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/PingPongManager.cs</fileName>
+    <timeStamp>2020-05-13T14:26:07.2141106+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>57068e417e3ea4201a8de864e9a223a5</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/PongEventArgs.cs</fileName>
+    <timeStamp>2020-05-13T14:26:07.2111113+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>38af07c5cfa1940f2bd0b981bccea293</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/WebSocketClientFactory.cs</fileName>
+    <timeStamp>2020-05-13T14:26:07.2852029+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f2911aa44c1154bf88781555542a9de3</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/WebSocketClientOptions.cs</fileName>
+    <timeStamp>2020-05-13T14:26:07.3232622+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>efbbd1ab9e45e4dd3b88faaca1048c7f</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/WebSocketHttpContext.cs</fileName>
+    <timeStamp>2020-05-13T14:26:07.3382816+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c5fcfcd10538542edb4842d81798f4dd</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/WebSocketServerFactory.cs</fileName>
+    <timeStamp>2020-05-13T14:26:07.389332+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7f8d9d315d665461a94bc139e46cbfce</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/WebSocketServerOptions.cs</fileName>
+    <timeStamp>2020-05-13T14:26:07.3933311+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7ef87d4a0822c4d2da3e8daa392e61d3</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/EntityTooLargeException.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.7771492+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>2c2d7303a1a324f0ebe15cb3faf9b0d5</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/InvalidHttpResponseCodeException.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.7821477+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>66d99fe90f4cb4471bf01c6f391ffc29</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/SecWebSocketKeyMissingException.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.803141+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>9b188b3dddee84decadd5913a535746b</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/ServerListenerSocketException.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.8141375+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>3c3188abcb6c441759011da01fa342f4</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/WebSocketBufferOverflowException.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.822135+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7dd72ca0a28054d258c1d1ad8254a16e</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/WebSocketHandshakeFailedException.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.8331314+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>dc12d4b9cfe854aeeaab3c9f2f3d165e</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/WebSocketVersionNotSupportedException.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.8491266+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>2379de83fde9446689e7fd94d8cefca1</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Internal/BinaryReaderWriter.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.8891133+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7713ae9d113e145389c0a175d58090be</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Internal/Events.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.9011109+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a4e8a4f1bcb0c49d7a82e5f430c85e2d</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Internal/WebSocketFrame.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.9121059+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>adbf6c11b66794c0494acf9c713a6759</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Internal/WebSocketFrameCommon.cs</fileName>
+    <timeStamp>2020-05-13T14:26:07.0170725+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>092a4b88aabbc4d3b91f6a82c40b47e3</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Internal/WebSocketFrameReader.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.9370982+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>df337f1f7ba5245f7acadbe2e44b86bd</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Internal/WebSocketFrameWriter.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.9650892+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>087dfa54efe9345b390e0758d42e52cf</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Internal/WebSocketImplementation.cs</fileName>
+    <timeStamp>2020-05-13T14:26:06.9900813+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>5f2106e8022034b9180513e27b488b4c</guid>
+    <fileName>Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Internal/WebSocketOpCode.cs</fileName>
+    <timeStamp>2020-05-13T14:26:07.0010784+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>9efddb9802c3a4b4cac40f615cde63ce</guid>
+    <fileName>Assets/Scripts/GameMemory.cs</fileName>
+    <timeStamp>2020-05-13T14:26:07.5583431+02:00</timeStamp>
+    <typeFullName>
+      <string>GameMemory</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>f7d18a8b1e157794cb8e47c2c845a157</guid>
+    <fileName>Assets/Scripts/Components/CameraOrbit.cs</fileName>
+    <timeStamp>2020-05-11T16:06:00.3814881+02:00</timeStamp>
+    <typeFullName>
+      <string>CameraOrbit</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>5b93af38fe5177245a7ca43b6819e9cf</guid>
+    <fileName>Assets/Scripts/Components/IndexedObject.cs</fileName>
+    <timeStamp>2020-05-11T16:06:00.3824877+02:00</timeStamp>
+    <typeFullName>
+      <string>IndexedObject</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>f819d2358ceb4614da9dcba1047912ce</guid>
+    <fileName>Assets/Scripts/Components/Piece.cs</fileName>
+    <timeStamp>2020-05-11T16:06:00.3824877+02:00</timeStamp>
+    <typeFullName>
+      <string>Piece</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>c64de0b9621f1d5488be35e915d7eaf0</guid>
+    <fileName>Assets/Scripts/Components/Tile.cs</fileName>
+    <timeStamp>2020-05-11T16:06:00.3834691+02:00</timeStamp>
+    <typeFullName>
+      <string>Tile</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>a04453802ba394e4b8ce800437e17b39</guid>
+    <fileName>Assets/Scripts/Logic/InputManagement.cs</fileName>
+    <timeStamp>2020-05-13T14:26:07.7082948+02:00</timeStamp>
+    <typeFullName>
+      <string>InputManagement</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>08cd762beb1f8ab47a91150eaa3a4622</guid>
+    <fileName>Assets/Scripts/Logic/MovementLogic.cs</fileName>
+    <timeStamp>2020-05-11T16:06:00.3914677+02:00</timeStamp>
+    <typeFullName>
+      <string>MovementLogic</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>8d32d894da649f447bacbbfdbcedb6bf</guid>
+    <fileName>Assets/Scripts/Logic/NetworkLogic.cs</fileName>
+    <timeStamp>2020-05-13T14:26:07.559343+02:00</timeStamp>
+    <typeFullName>
+      <string>NetworkLogic</string>
+      <string>NetworkLogic+MoveMessage</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>897175c2921a00e45891653fad83be9f</guid>
+    <fileName>Assets/Scripts/Logic/TakingLogic.cs</fileName>
+    <timeStamp>2020-05-13T14:26:02.2265245+02:00</timeStamp>
+    <typeFullName>
+      <string>TakingLogic</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>2d3bd8b356b1e434db31822cfd2cf242</guid>
+    <fileName>Assets/Scripts/Logic/WinConditions.cs</fileName>
+    <timeStamp>2020-05-11T16:06:00.3924669+02:00</timeStamp>
+    <typeFullName>
+      <string>WinConditions</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>3c26023f12bd41047b83a6d5581b24e9</guid>
+    <fileName>Assets/Scripts/UI/PauseMenu.cs</fileName>
+    <timeStamp>2020-05-13T14:26:07.6073273+02:00</timeStamp>
+    <typeFullName>
+      <string>PauseMenu</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>498e67ecda3b4db489a14ca8038fa682</guid>
+    <fileName>Assets/Scripts/Utility/DebugHelper.cs</fileName>
+    <timeStamp>2020-05-11T16:06:00.3954655+02:00</timeStamp>
+    <typeFullName>
+      <string>DebugHelper</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>64301b666ede53c40b1562d7bfeaa722</guid>
+    <fileName>Assets/Scripts/Utility/FacingDirection.cs</fileName>
+    <timeStamp>2020-05-11T16:06:00.3964653+02:00</timeStamp>
+    <typeFullName>
+      <string>FacingDirection</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>fbc959964b5822f4e81a41af467c107d</guid>
+    <fileName>Assets/Scripts/Utility/Tags.cs</fileName>
+    <timeStamp>2020-05-13T14:26:07.6253226+02:00</timeStamp>
+    <typeFullName>
+      <string>Tags.FigureTags</string>
+      <string>Tags.TileTags</string>
+      <string>Tags.TeamTag</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+</ArrayOfTypeDate>
