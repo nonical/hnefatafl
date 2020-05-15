@@ -9,6 +9,7 @@ public class PauseMenu : MonoBehaviour {
     public GameObject gameFinishedUI;
     public GameObject mainMenuUI;
     public GameObject onlineMenuUI;
+    public GameObject teamPickUI;
     public GameObject ipAddressInput;
     public bool isGamePaused = false;
 
@@ -62,6 +63,7 @@ public class PauseMenu : MonoBehaviour {
     }
 
     public void playLocal() {
+        GameMemory.AttackerTurn = true;
         Time.timeScale = 1f;//unfreeze time
         GameMemory.Multiplayer = false;
         mainMenuUI.SetActive(false);
@@ -69,6 +71,7 @@ public class PauseMenu : MonoBehaviour {
     }
 
     public void playOnline() {
+        GameMemory.AttackerTurn = true;
         mainMenuUI.SetActive(false);
         onlineMenuUI.SetActive(true);
         GameMemory.Multiplayer = true;
@@ -80,11 +83,30 @@ public class PauseMenu : MonoBehaviour {
 
     public void hostGame() {
         onlineMenuUI.SetActive(false);
+        teamPickUI.SetActive(true);
+    }
+
+    private void startHosting() {
+        teamPickUI.SetActive(false);
         Time.timeScale = 1f;
         toggleInputScript(true);
         NetworkManager.singleton.StartHost();
     }
 
+    public void hostAsAttacker() {
+        GameMemory.teamTag = Tags.TeamTag.Attackers;
+        startHosting();
+    }
+
+    public void hostAsDefender() {
+        GameMemory.teamTag = Tags.TeamTag.Defenders;
+        startHosting();
+    }
+
+    public void backToOnlineUI() {
+        teamPickUI.SetActive(false);
+        onlineMenuUI.SetActive(true);
+    }
     public void joinGame() {
 
         var uriii = new System.Uri($"tcp4://77.221.10.20:7777");
