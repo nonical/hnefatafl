@@ -1,32 +1,31 @@
 ﻿using Mirror;
+using NetworkMessages;
+using Tags;
 using UnityEngine;
-using Open.Nat;
 
-public class NetworkLogic : MonoBehaviour {
-    Mapping port = new Mapping(Protocol.Tcp, 7777, 7777);
-    NatDevice device;
-
-    public class MoveMessage : MessageBase {
-        public int originI;
-        public int originJ;
-        public int destI;
-        public int destJ;
-    }
-
-    private async void Awake() {
-        NatDiscoverer discoverer = new NatDiscoverer();
-
-        device = await discoverer.DiscoverDeviceAsync();
-        await device.CreatePortMapAsync(port);
-    }
-
+public class NetworkHandlers : MonoBehaviour {
     private void Start() {
         SetupNetworkHandlers();
     }
 
     private void SetupNetworkHandlers() {
         NetworkClient.RegisterHandler<MoveMessage>(OnMoveClient);
+        NetworkClient.RegisterHandler<TeamMessage>(OnTeamClient);
+
         NetworkServer.RegisterHandler<MoveMessage>(OnMoveServer);
+        NetworkServer.RegisterHandler<TeamMessage>(OnTeamServer);
+    }
+
+    private void OnTeamServer(NetworkConnection conn, TeamMessage msg) {
+        if (conn.identity.netId == 1) return;
+
+        var team = GameMemory.teamTag != TeamTag.Attackers ? TeamTag.Attackers : TeamTag.Defenders;
+
+        NetworkServer.SendToClientOfPlayer(conn.identity, new TeamMessage() { teamTag = team });
+    }
+
+    private void OnTeamClient(NetworkConnection conn, TeamMessage msg) {
+        GameMemory.teamTag = msg.teamTag;
     }
 
     private void OnMoveServer(NetworkConnection conn, MoveMessage msg) {
@@ -49,9 +48,5 @@ public class NetworkLogic : MonoBehaviour {
         };
 
         NetworkClient.Send(msg);
-    }
-
-    private async void OnDestroy() {
-        await device.DeletePortMapAsync(port);
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 public class InputManagement : MonoBehaviour {
     private Transform selectedPiece;
     private bool pieceMoving = false;
-    private NetworkLogic networkLogic;
+    private NetworkHandlers networkHandlers;
 
     private void Start() {
         MovementLogic.FigureMoved += (GameObject _, (int, int) __) => {
@@ -12,7 +12,7 @@ public class InputManagement : MonoBehaviour {
             selectedPiece = null;
         };
 
-        networkLogic = GetComponent<NetworkLogic>();
+        networkHandlers = GetComponent<NetworkHandlers>();
     }
 
     void Update() {
@@ -49,7 +49,7 @@ public class InputManagement : MonoBehaviour {
                     pieceMoving = true;
 
                     if (GameMemory.Multiplayer) {
-                        networkLogic.SendMoveMessage(GameMemory.GetIndices(selectedPiece.gameObject), GameMemory.GetIndices(selection.gameObject));
+                        networkHandlers.SendMoveMessage(GameMemory.GetIndices(selectedPiece.gameObject), GameMemory.GetIndices(selection.gameObject));
                     } else {
                         MovementLogic.MovePiece(selectedPiece.gameObject, selection.gameObject);
                     }
