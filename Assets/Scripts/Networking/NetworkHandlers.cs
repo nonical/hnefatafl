@@ -1,8 +1,8 @@
-﻿using Mirror;
-using UnityEngine;
+﻿using UnityEngine;
+using Mirror;
 using NetworkMessages;
 
-public class NetworkLogic : MonoBehaviour {
+public class NetworkHandlers : MonoBehaviour {
     private void Start() {
         SetupNetworkHandlers();
     }
