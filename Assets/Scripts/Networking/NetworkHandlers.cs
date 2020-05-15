@@ -1,6 +1,7 @@
-﻿using UnityEngine;
-using Mirror;
+﻿using Mirror;
 using NetworkMessages;
+using Tags;
+using UnityEngine;
 
 public class NetworkHandlers : MonoBehaviour {
     private void Start() {
@@ -9,7 +10,22 @@ public class NetworkHandlers : MonoBehaviour {
 
     private void SetupNetworkHandlers() {
         NetworkClient.RegisterHandler<MoveMessage>(OnMoveClient);
+        NetworkClient.RegisterHandler<TeamMessage>(OnTeamClient);
+
         NetworkServer.RegisterHandler<MoveMessage>(OnMoveServer);
+        NetworkServer.RegisterHandler<TeamMessage>(OnTeamServer);
+    }
+
+    private void OnTeamServer(NetworkConnection conn, TeamMessage msg) {
+        if (conn.identity.netId == 1) return;
+
+        var team = GameMemory.teamTag != TeamTag.Attackers ? TeamTag.Attackers : TeamTag.Defenders;
+
+        NetworkServer.SendToClientOfPlayer(conn.identity, new TeamMessage() { teamTag = team });
+    }
+
+    private void OnTeamClient(NetworkConnection conn, TeamMessage msg) {
+        GameMemory.teamTag = msg.teamTag;
     }
 
     private void OnMoveServer(NetworkConnection conn, MoveMessage msg) {
