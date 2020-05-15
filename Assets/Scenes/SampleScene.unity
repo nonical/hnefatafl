@@ -8881,7 +8881,7 @@ MonoBehaviour:
   mainMenuUI: {fileID: 1495401361}
   onlineMenuUI: {fileID: 1054139299}
   teamPickUI: {fileID: 238721033}
-  ipAddressInput: {fileID: 883853830}
+  ipAddressInput: {fileID: 1137641964}
   isGamePaused: 0
 --- !u!114 &866276688
 MonoBehaviour:
@@ -9210,7 +9210,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u200B"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
