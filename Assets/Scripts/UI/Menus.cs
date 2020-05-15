@@ -108,16 +108,15 @@ public class Menus : MonoBehaviour {
         onlineMenuUI.SetActive(true);
     }
     public void joinGame() {
+        var ip = ipAddressInput.GetComponent<TMP_InputField>().text;
 
-        var uriii = new System.Uri($"tcp4://77.221.10.20:7777");
+        if (string.IsNullOrEmpty(ip)) {
+            return;
+        }
 
-        NetworkManager.singleton.StartClient(uriii);
-
+        NetworkClient.Connect(ip);
         onlineMenuUI.SetActive(false);
         Time.timeScale = 1f;
-
         toggleInputScript(true);
-
-        //Debug.Log(ipAddressInput.GetComponent<TextMeshProUGUI>().text);
     }
 }
