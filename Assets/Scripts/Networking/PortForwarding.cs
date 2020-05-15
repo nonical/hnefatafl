@@ -8,7 +8,7 @@ public class PortForwarding : MonoBehaviour {
     private Mapping mapping;
     private int port;
 
-    public int lifetime = 5;
+    public int lifetime = 3600;
     public string description = "Hnefatafl Host Port";
 
     private void Start() {
