@@ -22,6 +22,6 @@ public class PortForwarding : MonoBehaviour {
         natDevice = await discoverer.DiscoverDeviceAsync();
         await natDevice.CreatePortMapAsync(mapping);
 
-        Debug.Log($"Port {port} is ready to recieve connections!");
+        Debug.Log($"Port {port} is ready to receive connections!");
     }
 }
