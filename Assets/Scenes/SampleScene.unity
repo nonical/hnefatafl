@@ -17541,6 +17541,7 @@ GameObject:
   - component: {fileID: 1749866187}
   - component: {fileID: 1749866184}
   - component: {fileID: 1749866183}
+  - component: {fileID: 1749866185}
   m_Layer: 0
   m_Name: NetworkManager
   m_TagString: Untagged
@@ -17605,6 +17606,20 @@ MonoBehaviour:
   serverMaxReceivesPerTick: 10000
   clientMaxMessageSize: 16384
   clientMaxReceivesPerTick: 1000
+--- !u!114 &1749866185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749866182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1cfe2da9173dc4a8542d9e0c955255, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifetime: 5
+  description: Hnefatafl Host Port
 --- !u!4 &1749866186
 Transform:
   m_ObjectHideFlags: 0
