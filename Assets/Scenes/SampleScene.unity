@@ -8885,6 +8885,7 @@ MonoBehaviour:
   teamPickUI: {fileID: 238721033}
   ipAddressInput: {fileID: 1137641964}
   isGamePaused: 0
+  networkManager: {fileID: 1749866187}
 --- !u!114 &866276688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17618,7 +17619,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d1cfe2da9173dc4a8542d9e0c955255, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifetime: 5
+  lifetime: 3600
   description: Hnefatafl Host Port
 --- !u!4 &1749866186
 Transform:

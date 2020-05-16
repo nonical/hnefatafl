@@ -12,7 +12,7 @@ public class Menus : MonoBehaviour {
     public GameObject teamPickUI;
     public GameObject ipAddressInput;
     public bool isGamePaused = false;
-
+    public NetworkManager networkManager;
 
     private void Awake() {
         Time.timeScale = 0f;
@@ -55,7 +55,7 @@ public class Menus : MonoBehaviour {
         Time.timeScale = 1f;
         SceneManager.LoadScene("SampleScene");
         mainMenuUI.SetActive(true);
-        NetworkManager.singleton.StopHost();
+        networkManager.StopHost();
     }
 
     public void Quit() {
@@ -90,7 +90,7 @@ public class Menus : MonoBehaviour {
         teamPickUI.SetActive(false);
         Time.timeScale = 1f;
         toggleInputScript(true);
-        NetworkManager.singleton.StartHost();
+        networkManager.StartHost();
     }
 
     public void hostAsAttacker() {
@@ -107,6 +107,7 @@ public class Menus : MonoBehaviour {
         teamPickUI.SetActive(false);
         onlineMenuUI.SetActive(true);
     }
+
     public void joinGame() {
         var ip = ipAddressInput.GetComponent<TMP_InputField>().text;
 
@@ -114,9 +115,11 @@ public class Menus : MonoBehaviour {
             return;
         }
 
-        NetworkClient.Connect(ip);
         onlineMenuUI.SetActive(false);
         Time.timeScale = 1f;
         toggleInputScript(true);
+
+        networkManager.networkAddress = ip;
+        networkManager.StartClient();
     }
 }
