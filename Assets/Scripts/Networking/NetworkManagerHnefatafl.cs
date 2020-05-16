@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using Mirror;
 using NetworkMessages;
+using System.Threading.Tasks;
 
 public class NetworkManagerHnefatafl : NetworkManager {
     private PortForwarding portForwarding;
@@ -10,13 +11,8 @@ public class NetworkManagerHnefatafl : NetworkManager {
         portForwarding = GetComponent<PortForwarding>();
     }
 
-    public override async void OnStartClient() {
-        await portForwarding.OpenPort();
-        base.OnStartClient();
-    }
-
-    public override async void OnStartHost() {
-        await portForwarding.OpenPort();
+    public override void OnStartHost() {
+        Task.Run(portForwarding.OpenPort).Wait();
         base.OnStartHost();
     }
 
