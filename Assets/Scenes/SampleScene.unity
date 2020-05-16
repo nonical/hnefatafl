@@ -8885,6 +8885,7 @@ MonoBehaviour:
   teamPickUI: {fileID: 238721033}
   ipAddressInput: {fileID: 1137641964}
   isGamePaused: 0
+  networkManager: {fileID: 1749866187}
 --- !u!114 &866276688
 MonoBehaviour:
   m_ObjectHideFlags: 0
