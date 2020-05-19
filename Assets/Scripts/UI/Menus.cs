@@ -1,4 +1,4 @@
-﻿using Mirror;
+using Mirror;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -13,13 +13,12 @@ public class Menus : MonoBehaviour {
     public GameObject ipAddressInput;
     public bool isGamePaused = false;
     public NetworkManager networkManager;
+    public Camera UICamera;
 
-    private void Awake() {
-        Time.timeScale = 0f;
-    }
     private void Start() {
         toggleInputScript(false);
     }
+
     void Update() {
         if (Input.GetKeyDown(KeyCode.Escape)) {
             if (isGamePaused) {
@@ -48,13 +47,12 @@ public class Menus : MonoBehaviour {
         Time.timeScale = 0f;
         isGamePaused = true;
         toggleInputScript(false);
-
     }
 
     public void Exit() {
         Time.timeScale = 1f;
+        pauseMenuUI.SetActive(false);
         SceneManager.LoadScene("SampleScene");
-        mainMenuUI.SetActive(true);
         networkManager.StopHost();
     }
 
@@ -63,11 +61,12 @@ public class Menus : MonoBehaviour {
     }
 
     public void playLocal() {
+        RenderSettings.fog = false;
         GameMemory.AttackerTurn = true;
-        Time.timeScale = 1f;//unfreeze time
         GameMemory.Multiplayer = false;
         mainMenuUI.SetActive(false);
         toggleInputScript(true);
+        UICamera.enabled = false;
     }
 
     public void playOnline() {
@@ -76,6 +75,7 @@ public class Menus : MonoBehaviour {
         onlineMenuUI.SetActive(true);
         GameMemory.Multiplayer = true;
     }
+
     public void backToMenu() {
         mainMenuUI.SetActive(true);
         onlineMenuUI.SetActive(false);
@@ -88,9 +88,10 @@ public class Menus : MonoBehaviour {
 
     private void startHosting() {
         teamPickUI.SetActive(false);
-        Time.timeScale = 1f;
         toggleInputScript(true);
         networkManager.StartHost();
+        UICamera.enabled = false;
+        RenderSettings.fog = false;
     }
 
     public void hostAsAttacker() {
@@ -116,10 +117,10 @@ public class Menus : MonoBehaviour {
         }
 
         onlineMenuUI.SetActive(false);
-        Time.timeScale = 1f;
         toggleInputScript(true);
 
         networkManager.networkAddress = ip;
         networkManager.StartClient();
+        UICamera.enabled = false;
     }
 }
