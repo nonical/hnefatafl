@@ -1,4 +1,4 @@
-using Tags;
+﻿using Tags;
 using UnityEngine;
 
 public class InputManagement : MonoBehaviour {
@@ -34,7 +34,7 @@ public class InputManagement : MonoBehaviour {
 
                     if (GameMemory.Multiplayer) {
                         if (GameMemory.teamTag == TeamTag.Attackers && !selection.CompareTag(FigureTags.TeamA)) return;
-                        if (GameMemory.teamTag == TeamTag.Defenders && selection.CompareTag(FigureTags.TeamA)) return;
+                        if (GameMemory.teamTag == TeamTag.Defenders && !selection.CompareTag(FigureTags.TeamB)) return;
                     }
 
                     selectedPiece = selection;
