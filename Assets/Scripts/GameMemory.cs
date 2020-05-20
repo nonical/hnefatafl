@@ -176,4 +176,8 @@ public class GameMemory : MonoBehaviour {
             { (10, 7), FacingDirection.Up }
         };
     }
+
+    private void OnDestroy() {
+        MovementLogic.FigureMoved -= MoveFigure;
+    }
 }

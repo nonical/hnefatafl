@@ -96,4 +96,8 @@ public class TakingLogic : MonoBehaviour {
         FigureList.Clear();
         TilesList.Clear();
     }
+
+    private void OnDestroy() {
+        MovementLogic.FigureMoved -= CheckTaking;
+    }
 }

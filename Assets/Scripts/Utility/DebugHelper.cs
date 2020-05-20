@@ -2,10 +2,12 @@
 
 public class DebugHelper : MonoBehaviour {
     private void Start() {
-        MovementLogic.FigureMoved += (GameObject _, (int, int) __) => {
-            LogFigures();
-            LogTiles();
-        };
+        MovementLogic.FigureMoved += OnFigureMoved;
+    }
+
+    private void OnFigureMoved(GameObject arg1, (int i, int j) arg2) {
+        LogFigures();
+        LogTiles();
     }
 
     public static void LogFigures() {
@@ -34,5 +36,9 @@ public class DebugHelper : MonoBehaviour {
         }
 
         Debug.Log(matrix);
+    }
+
+    private void OnDestroy() {
+        MovementLogic.FigureMoved -= OnFigureMoved;
     }
 }

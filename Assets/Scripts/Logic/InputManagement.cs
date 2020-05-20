@@ -1,4 +1,4 @@
-﻿using Tags;
+using Tags;
 using UnityEngine;
 
 public class InputManagement : MonoBehaviour {
@@ -7,12 +7,13 @@ public class InputManagement : MonoBehaviour {
     private NetworkHandlers networkHandlers;
 
     private void Start() {
-        MovementLogic.FigureMoved += (GameObject _, (int, int) __) => {
-            pieceMoving = false;
-            selectedPiece = null;
-        };
-
+        MovementLogic.FigureMoved += OnFigureMoved;
         networkHandlers = GetComponent<NetworkHandlers>();
+    }
+
+    private void OnFigureMoved(GameObject arg1, (int i, int j) arg2) {
+        pieceMoving = false;
+        selectedPiece = null;
     }
 
     void Update() {
@@ -56,5 +57,9 @@ public class InputManagement : MonoBehaviour {
                 };
             }
         }
+    }
+
+    private void OnDestroy() {
+        MovementLogic.FigureMoved -= OnFigureMoved;
     }
 }
