@@ -1402,7 +1402,7 @@ MonoBehaviour:
     type: 3}
   PlayerKing_Prefab: {fileID: 2428685675628088562, guid: 4ec3abe0b980143468838526a4a5d73d,
     type: 3}
-  spawnHeightOffset: 5
+  spawnHeightOffset: 0.5
 --- !u!114 &149631285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8636,7 +8636,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pieceManager: {fileID: 530545777}
   pauseMenuUI: {fileID: 392164651}
-  gameFinishedUI: {fileID: 0}
+  gameFinishedUI: {fileID: 1849020368}
   mainMenuUI: {fileID: 1495401361}
   onlineMenuUI: {fileID: 1054139299}
   teamPickUI: {fileID: 238721033}

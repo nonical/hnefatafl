@@ -32,8 +32,6 @@ public class WinConditions : MonoBehaviour {
         gameFinishedUI.SetActive(true);
         Time.timeScale = 0f;
         toggleInputScript(false);
-        AttackersWin -= AttackersWinMessage;
-        DefendersWin -= DefendersWinMessage;
     }
 
     public void AttackersWinMessage() {
@@ -41,6 +39,10 @@ public class WinConditions : MonoBehaviour {
         gameFinishedUI.SetActive(true);
         Time.timeScale = 0f;
         toggleInputScript(false);
+    }
+
+    private void OnDestroy() {
+        MovementLogic.FigureMoved -= CheckHavenTiles;
         AttackersWin -= AttackersWinMessage;
         DefendersWin -= DefendersWinMessage;
     }

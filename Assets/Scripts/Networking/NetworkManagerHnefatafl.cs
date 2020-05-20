@@ -1,7 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Threading.Tasks;
 using Mirror;
 using NetworkMessages;
-using System.Threading.Tasks;
 
 public class NetworkManagerHnefatafl : NetworkManager {
     private PortForwarding portForwarding;
