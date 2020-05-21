@@ -39,7 +39,7 @@ public class Menus : MonoBehaviour {
             if (isGamePaused) {
                 Resume();
             } else {
-                if (!gameFinishedUI.activeSelf) {
+                if (!gameFinishedUI.activeSelf && !mainMenuUI.activeSelf && !onlineMenuUI.activeSelf && !teamPickUI.activeSelf) {
                     Pause();
                 }
             }
