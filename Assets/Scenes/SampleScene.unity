@@ -8915,6 +8915,7 @@ MonoBehaviour:
   isGamePaused: 0
   networkManager: {fileID: 1749866187}
   UICamera: {fileID: 1622948015}
+  turnMessageField: {fileID: 2019462139}
 --- !u!114 &866276688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18795,6 +18796,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 497334852}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2019462139 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8330926715585229138, guid: b71f02ac1f2e1924684da79211b8e23a,
+    type: 3}
+  m_PrefabInstance: {fileID: 497334852}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019462138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2020526960
 GameObject:
   m_ObjectHideFlags: 0

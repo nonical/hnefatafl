@@ -18,23 +18,23 @@ public class Menus : MonoBehaviour {
     public bool isGamePaused = false;
     public NetworkManager networkManager;
     public Camera UICamera;
+    public TMP_Text turnMessageField;
 
     private void Start() {
         toggleInputScript(false);
         MovementLogic.FigureMoved += changeTurnMessage;
     }
-    
+
     private void OnDestroy() {
         MovementLogic.FigureMoved -= changeTurnMessage;
     }
 
     private void changeTurnMessage(GameObject arg1, (int i, int j) arg2) {
-        var text = turnMessageText.GetComponent<TMP_Text>().text;
-       
-        turnMessageText.GetComponent<TMP_Text>().text = (text.Contains("Attackers Turn")) ? 
-        turnMessageText.GetComponent<TMP_Text>().text = "Defenders Turn" : 
-        turnMessageText.GetComponent<TMP_Text>().text = "Attackers Turn";
+        var text = turnMessageField.text;
 
+        turnMessageField.text = (text.Contains("Attackers Turn")) ?
+        turnMessageField.text = "Defenders Turn" :
+        turnMessageField.text = "Attackers Turn";
     }
 
     void Update() {
