@@ -39,7 +39,7 @@ public class Menus : MonoBehaviour {
             if (isGamePaused) {
                 Resume();
             } else {
-                if (!gameFinishedUI.activeSelf) {
+                if (!gameFinishedUI.activeSelf && !mainMenuUI.activeSelf && !onlineMenuUI.activeSelf && !teamPickUI.activeSelf) {
                     Pause();
                 }
             }
@@ -110,6 +110,7 @@ public class Menus : MonoBehaviour {
         UICamera.SetActive(false);
         RenderSettings.fog = false;
         turnMessagesUI.SetActive(true);
+        mainCamera.SetActive(true);
     }
 
     public void hostAsAttacker() {
@@ -141,6 +142,7 @@ public class Menus : MonoBehaviour {
         networkManager.StartClient();
         UICamera.SetActive(false);
         turnMessagesUI.SetActive(true);
+        mainCamera.SetActive(true);
     }
 
 }
