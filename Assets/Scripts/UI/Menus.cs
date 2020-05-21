@@ -30,11 +30,7 @@ public class Menus : MonoBehaviour {
     }
 
     private void changeTurnMessage(GameObject arg1, (int i, int j) arg2) {
-        var text = turnMessageField.text;
-
-        turnMessageField.text = (text.Contains("Attackers Turn")) ?
-        turnMessageField.text = "Defenders Turn" :
-        turnMessageField.text = "Attackers Turn";
+        turnMessageField.text = turnMessageField.text.Contains("Attackers Turn") ? "Defenders Turn" : "Attackers Turn";
     }
 
     void Update() {
