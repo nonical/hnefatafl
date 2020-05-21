@@ -15738,7 +15738,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6681b1bc04291a4f90b170cba00ac13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Target: {fileID: 0}
+  Target: {fileID: 1103077880}
+  rotationSpeed: 5
 --- !u!20 &1622948015
 Camera:
   m_ObjectHideFlags: 0
@@ -15764,7 +15765,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 28.36607
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -15789,13 +15790,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1622948012}
-  m_LocalRotation: {x: -0.1930486, y: 0.5878727, z: 0.14706364, w: 0.77169317}
-  m_LocalPosition: {x: 16.124207, y: 555.81946, z: -2076.829}
+  m_LocalRotation: {x: 0.11687498, y: 0.9045408, z: -0.27773082, w: 0.30168182}
+  m_LocalPosition: {x: -20.3, y: 20.21, z: 29.02}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: -28.090002, y: 74.6, z: 0}
+  m_LocalEulerAnglesHint: {x: 34.957, y: 144.07701, z: 3.068}
 --- !u!1001 &1649032646
 PrefabInstance:
   m_ObjectHideFlags: 0
