@@ -28,6 +28,7 @@ public class WinConditions : MonoBehaviour {
     }
 
     public void DefendersWinMessage() {
+        GameObject.Find("TurnMessagesUI").SetActive(false);
         gameFinishedUI.transform.GetChild(0).gameObject.SetActive(true); //display defenders win text
         gameFinishedUI.SetActive(true);
         Time.timeScale = 0f;
@@ -35,6 +36,7 @@ public class WinConditions : MonoBehaviour {
     }
 
     public void AttackersWinMessage() {
+        GameObject.Find("TurnMessagesUI").SetActive(false);
         gameFinishedUI.transform.GetChild(1).gameObject.SetActive(true); //display attackers win text
         gameFinishedUI.SetActive(true);
         Time.timeScale = 0f;
