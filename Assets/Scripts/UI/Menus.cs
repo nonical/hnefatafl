@@ -1,7 +1,9 @@
+using System;
 using Mirror;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Menus : MonoBehaviour {
     public GameObject pieceManager;
@@ -11,12 +13,27 @@ public class Menus : MonoBehaviour {
     public GameObject onlineMenuUI;
     public GameObject teamPickUI;
     public GameObject ipAddressInput;
+    public GameObject turnMessagesUI;
+    public GameObject turnMessageText;
     public bool isGamePaused = false;
     public NetworkManager networkManager;
     public Camera UICamera;
 
     private void Start() {
         toggleInputScript(false);
+        MovementLogic.FigureMoved += changeTurnMessage;
+    }
+    private void OnDestroy() {
+        MovementLogic.FigureMoved -= changeTurnMessage;
+    }
+
+    private void changeTurnMessage(GameObject arg1, (int i, int j) arg2) {
+        var text = turnMessageText.GetComponent<TMP_Text>().text;
+       
+        turnMessageText.GetComponent<TMP_Text>().text = (text.Contains("Attackers Turn")) ? 
+        turnMessageText.GetComponent<TMP_Text>().text = "Defenders Turn" : 
+        turnMessageText.GetComponent<TMP_Text>().text = "Attackers Turn";
+
     }
 
     void Update() {
@@ -67,6 +84,7 @@ public class Menus : MonoBehaviour {
         mainMenuUI.SetActive(false);
         toggleInputScript(true);
         UICamera.enabled = false;
+        turnMessagesUI.SetActive(true);
     }
 
     public void playOnline() {
@@ -92,6 +110,7 @@ public class Menus : MonoBehaviour {
         networkManager.StartHost();
         UICamera.enabled = false;
         RenderSettings.fog = false;
+        turnMessagesUI.SetActive(true);
     }
 
     public void hostAsAttacker() {
@@ -122,5 +141,7 @@ public class Menus : MonoBehaviour {
         networkManager.networkAddress = ip;
         networkManager.StartClient();
         UICamera.enabled = false;
+        turnMessagesUI.SetActive(true);
     }
+
 }
