@@ -8982,8 +8982,8 @@ MonoBehaviour:
   turnMessageText: {fileID: 2019462138}
   isGamePaused: 0
   networkManager: {fileID: 1749866187}
-  UICamera: {fileID: 1622948015}
-  mainCamera: {fileID: 0}
+  UICamera: {fileID: 1622948012}
+  mainCamera: {fileID: 963194225}
   turnMessageField: {fileID: 2019462139}
 --- !u!114 &866276688
 MonoBehaviour:
@@ -9662,7 +9662,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &963194226
 AudioListener:
   m_ObjectHideFlags: 0

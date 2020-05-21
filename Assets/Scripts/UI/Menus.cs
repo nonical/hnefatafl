@@ -17,7 +17,8 @@ public class Menus : MonoBehaviour {
     public GameObject turnMessageText;
     public bool isGamePaused = false;
     public NetworkManager networkManager;
-    public Camera UICamera;
+    public GameObject UICamera;
+    public GameObject mainCamera;
     public TMP_Text turnMessageField;
 
     private void Start() {
@@ -80,8 +81,9 @@ public class Menus : MonoBehaviour {
         GameMemory.Multiplayer = false;
         mainMenuUI.SetActive(false);
         toggleInputScript(true);
-        UICamera.enabled = false;
+        UICamera.SetActive(false);
         turnMessagesUI.SetActive(true);
+        mainCamera.SetActive(true);
     }
 
     public void playOnline() {
@@ -105,7 +107,7 @@ public class Menus : MonoBehaviour {
         teamPickUI.SetActive(false);
         toggleInputScript(true);
         networkManager.StartHost();
-        UICamera.enabled = false;
+        UICamera.SetActive(false);
         RenderSettings.fog = false;
         turnMessagesUI.SetActive(true);
     }
@@ -137,7 +139,7 @@ public class Menus : MonoBehaviour {
 
         networkManager.networkAddress = ip;
         networkManager.StartClient();
-        UICamera.enabled = false;
+        UICamera.SetActive(false);
         turnMessagesUI.SetActive(true);
     }
 
