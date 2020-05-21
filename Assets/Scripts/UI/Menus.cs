@@ -23,6 +23,7 @@ public class Menus : MonoBehaviour {
         toggleInputScript(false);
         MovementLogic.FigureMoved += changeTurnMessage;
     }
+    
     private void OnDestroy() {
         MovementLogic.FigureMoved -= changeTurnMessage;
     }
