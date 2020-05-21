@@ -5612,6 +5612,11 @@ PrefabInstance:
       propertyPath: m_PreserveAspect
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8330926714641492191, guid: b71f02ac1f2e1924684da79211b8e23a,
+        type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8330926715585229136, guid: b71f02ac1f2e1924684da79211b8e23a,
         type: 3}
       propertyPath: m_StaticEditorFlags
