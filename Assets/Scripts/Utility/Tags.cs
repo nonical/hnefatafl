@@ -3,6 +3,7 @@
         public static string TeamA { get; } = "playerA";
         public static string TeamB { get; } = "playerB";
         public static string King { get; } = "playerKing";
+        public static string Captured { get; set; } = "playerCaptured";
     }
 
     public struct TileTags {

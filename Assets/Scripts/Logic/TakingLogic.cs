@@ -5,11 +5,22 @@ using Tags;
 using UnityEngine;
 
 public class TakingLogic : MonoBehaviour {
-    public List<GameObject> FigureList { get; set; } = new List<GameObject>(3);
-    public List<GameObject> TilesList { get; set; } = new List<GameObject>(3);
+    public Transform CratePosition;
+
+    private List<GameObject> FigureList = new List<GameObject>(3);
+    private List<GameObject> TilesList = new List<GameObject>(3);
 
     void Start() {
         MovementLogic.FigureMoved += CheckTaking;
+    }
+
+    void FigureToCrate(GameObject figure) {
+        float randomX = UnityEngine.Random.Range(-0.7f, 0.7f);
+        float randomZ = UnityEngine.Random.Range(-0.3f, 0.3f);
+
+        figure.transform.parent = CratePosition;
+        figure.transform.localPosition = new Vector3(randomX, 0, randomZ);
+        figure.tag = FigureTags.Captured;
     }
 
     void CheckTaking(GameObject player, (int, int) indices) {
@@ -37,7 +48,7 @@ public class TakingLogic : MonoBehaviour {
                         WinConditions.AttackersWin?.Invoke();
                     }
 
-                    FigureList.ForEach(enemyFigure => Destroy(enemyFigure));
+                    FigureList.ForEach(enemyFigure => FigureToCrate(enemyFigure));
                     TilesList.ForEach(enemyTile => enemyTile.GetComponent<Tile>().isOccupied = false);
                 }
 
