@@ -9119,6 +9119,8 @@ MonoBehaviour:
   UICamera: {fileID: 1622948012}
   mainCamera: {fileID: 963194225}
   turnMessageField: {fileID: 2019462139}
+  audioSource: {fileID: 417509795}
+  pageSwitchSound: {fileID: 8300000, guid: 14395e4e2d452ec408759bcad9cfb872, type: 3}
 --- !u!114 &866276688
 MonoBehaviour:
   m_ObjectHideFlags: 0
