@@ -8,12 +8,15 @@
 public class Piece : IndexedObject {
     [Range(1, 10)]
     public float speed;
+
     private GameObject moveTarget;
     private Vector3 movePos;
     private Animator animator;
+    private AudioSource audioSource;
 
     private void Start() {
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update() {
@@ -28,6 +31,7 @@ public class Piece : IndexedObject {
             animator.SetInteger("AnimationState", 0);
             MovementLogic.FigureMoved(gameObject, GameMemory.GetIndices(moveTarget));
             moveTarget = null;
+            audioSource.Stop();
         }
     }
 
@@ -48,5 +52,7 @@ public class Piece : IndexedObject {
 
         movePos = target.transform.position;
         movePos.y = transform.position.y;
+
+        audioSource.Play();
     }
 }
