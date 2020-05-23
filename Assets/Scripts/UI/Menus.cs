@@ -11,6 +11,7 @@ public class Menus : MonoBehaviour {
     public GameObject mainMenuUI;
     public GameObject onlineMenuUI;
     public GameObject teamPickUI;
+    public GameObject UPNPErrorUI;
     public GameObject ipAddressInput;
     public GameObject turnMessagesUI;
     public GameObject turnMessageText;
@@ -115,8 +116,16 @@ public class Menus : MonoBehaviour {
 
     private void startHosting() {
         teamPickUI.SetActive(false);
+        try
+        {
+            networkManager.StartHost();
+        }
+        catch (System.Exception)
+        {
+            UPNPErrorUI.SetActive(true);
+            return;
+        }
         toggleInputScript(true);
-        networkManager.StartHost();
         UICamera.SetActive(false);
         RenderSettings.fog = false;
         turnMessagesUI.SetActive(true);
