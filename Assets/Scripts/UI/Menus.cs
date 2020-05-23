@@ -1,9 +1,7 @@
-using System;
 using Mirror;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class Menus : MonoBehaviour {
     public GameObject pieceManager;
@@ -20,6 +18,8 @@ public class Menus : MonoBehaviour {
     public GameObject UICamera;
     public GameObject mainCamera;
     public TMP_Text turnMessageField;
+    public AudioClip pageSwitchSound;
+    public SoundtrackController soundtrackController;
 
     private void Start() {
         toggleInputScript(false);
@@ -51,6 +51,7 @@ public class Menus : MonoBehaviour {
     }
 
     public void Resume() {
+        soundtrackController.ActivateFilters(false);
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         isGamePaused = false;
@@ -58,6 +59,7 @@ public class Menus : MonoBehaviour {
     }
 
     public void Pause() {
+        soundtrackController.ActivateFilters(true);
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         isGamePaused = true;
@@ -65,6 +67,7 @@ public class Menus : MonoBehaviour {
     }
 
     public void Exit() {
+        soundtrackController.ActivateFilters(false);
         Time.timeScale = 1f;
         pauseMenuUI.SetActive(false);
         SceneManager.LoadScene("SampleScene");
@@ -84,6 +87,7 @@ public class Menus : MonoBehaviour {
         UICamera.SetActive(false);
         turnMessagesUI.SetActive(true);
         mainCamera.SetActive(true);
+        soundtrackController.PlayOneShot(pageSwitchSound);
     }
 
     public void playOnline() {
@@ -91,16 +95,19 @@ public class Menus : MonoBehaviour {
         mainMenuUI.SetActive(false);
         onlineMenuUI.SetActive(true);
         GameMemory.Multiplayer = true;
+        soundtrackController.PlayOneShot(pageSwitchSound);
     }
 
     public void backToMenu() {
         mainMenuUI.SetActive(true);
         onlineMenuUI.SetActive(false);
+        soundtrackController.PlayOneShot(pageSwitchSound);
     }
 
     public void hostGame() {
         onlineMenuUI.SetActive(false);
         teamPickUI.SetActive(true);
+        soundtrackController.PlayOneShot(pageSwitchSound);
     }
 
     private void startHosting() {
@@ -126,6 +133,7 @@ public class Menus : MonoBehaviour {
     public void backToOnlineUI() {
         teamPickUI.SetActive(false);
         onlineMenuUI.SetActive(true);
+        soundtrackController.PlayOneShot(pageSwitchSound);
     }
 
     public void joinGame() {
