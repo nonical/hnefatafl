@@ -18,8 +18,8 @@ public class Menus : MonoBehaviour {
     public GameObject UICamera;
     public GameObject mainCamera;
     public TMP_Text turnMessageField;
-    public AudioSource audioSource;
     public AudioClip pageSwitchSound;
+    public SoundtrackController soundtrackController;
 
     private void Start() {
         toggleInputScript(false);
@@ -84,7 +84,7 @@ public class Menus : MonoBehaviour {
         UICamera.SetActive(false);
         turnMessagesUI.SetActive(true);
         mainCamera.SetActive(true);
-        audioSource.PlayOneShot(pageSwitchSound);
+        soundtrackController.PlayOneShot(pageSwitchSound);
     }
 
     public void playOnline() {
@@ -92,19 +92,19 @@ public class Menus : MonoBehaviour {
         mainMenuUI.SetActive(false);
         onlineMenuUI.SetActive(true);
         GameMemory.Multiplayer = true;
-        audioSource.PlayOneShot(pageSwitchSound);
+        soundtrackController.PlayOneShot(pageSwitchSound);
     }
 
     public void backToMenu() {
         mainMenuUI.SetActive(true);
         onlineMenuUI.SetActive(false);
-        audioSource.PlayOneShot(pageSwitchSound);
+        soundtrackController.PlayOneShot(pageSwitchSound);
     }
 
     public void hostGame() {
         onlineMenuUI.SetActive(false);
         teamPickUI.SetActive(true);
-        audioSource.PlayOneShot(pageSwitchSound);
+        soundtrackController.PlayOneShot(pageSwitchSound);
     }
 
     private void startHosting() {
@@ -130,7 +130,7 @@ public class Menus : MonoBehaviour {
     public void backToOnlineUI() {
         teamPickUI.SetActive(false);
         onlineMenuUI.SetActive(true);
-        audioSource.PlayOneShot(pageSwitchSound);
+        soundtrackController.PlayOneShot(pageSwitchSound);
     }
 
     public void joinGame() {
