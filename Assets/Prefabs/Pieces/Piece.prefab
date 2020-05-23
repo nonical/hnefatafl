@@ -962,6 +962,8 @@ MonoBehaviour:
   i: 0
   j: 0
   speed: 2
+  slashSound: {fileID: 8300000, guid: 52fa067c25c5c401b811eb86d142287e, type: 3}
+  hitSound: {fileID: 8300000, guid: f3645d7388d9f4efc88a56c59b3a70d4, type: 3}
 --- !u!136 &3048191974311872911
 CapsuleCollider:
   m_ObjectHideFlags: 0
