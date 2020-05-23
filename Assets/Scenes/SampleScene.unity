@@ -9169,6 +9169,7 @@ MonoBehaviour:
   UICamera: {fileID: 1622948012}
   mainCamera: {fileID: 963194225}
   turnMessageField: {fileID: 2019462139}
+  ipAddressPlaceholder: {fileID: 332387680}
   pageSwitchSound: {fileID: 8300000, guid: 0661072ecfb144b4e9e23d1770bd0295, type: 3}
   soundtrackController: {fileID: 417509797}
 --- !u!114 &866276688
@@ -20643,6 +20644,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8330926715585229139, guid: b71f02ac1f2e1924684da79211b8e23a,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 8330926715585229139, guid: b71f02ac1f2e1924684da79211b8e23a,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b71f02ac1f2e1924684da79211b8e23a, type: 3}
