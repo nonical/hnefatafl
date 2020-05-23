@@ -10483,6 +10483,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 11.621
       objectReference: {fileID: 0}
+    - target: {fileID: 7074304321171932556, guid: 5cc22dee4f3a39f48bbb851c41003c8c,
+        type: 3}
+      propertyPath: CameraUI
+      value: 
+      objectReference: {fileID: 1622948015}
+    - target: {fileID: 7074304321171932556, guid: 5cc22dee4f3a39f48bbb851c41003c8c,
+        type: 3}
+      propertyPath: CameraMain
+      value: 
+      objectReference: {fileID: 963194227}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5cc22dee4f3a39f48bbb851c41003c8c, type: 3}
 --- !u!4 &1027578814 stripped
@@ -15893,7 +15903,7 @@ GameObject:
   - component: {fileID: 1622948013}
   - component: {fileID: 1622948014}
   m_Layer: 0
-  m_Name: UICamera
+  m_Name: UI Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19048,6 +19058,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 16.543
       objectReference: {fileID: 0}
+    - target: {fileID: 6417669596261112997, guid: b02c5020824fa574d88a101f9b790908,
+        type: 3}
+      propertyPath: CameraUI
+      value: 
+      objectReference: {fileID: 1622948015}
+    - target: {fileID: 6417669596261112997, guid: b02c5020824fa574d88a101f9b790908,
+        type: 3}
+      propertyPath: CameraMain
+      value: 
+      objectReference: {fileID: 963194227}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b02c5020824fa574d88a101f9b790908, type: 3}
 --- !u!4 &2003942996 stripped
