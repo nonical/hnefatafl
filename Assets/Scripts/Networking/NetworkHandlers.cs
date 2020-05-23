@@ -49,4 +49,12 @@ public class NetworkHandlers : MonoBehaviour {
 
         NetworkClient.Send(msg);
     }
+
+    private void OnDestroy() {
+        NetworkClient.UnregisterHandler<MoveMessage>();
+        NetworkClient.UnregisterHandler<TeamMessage>();
+
+        NetworkServer.UnregisterHandler<MoveMessage>();
+        NetworkServer.UnregisterHandler<TeamMessage>();
+    }
 }
