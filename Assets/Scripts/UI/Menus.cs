@@ -12,6 +12,7 @@ public class Menus : MonoBehaviour {
     public GameObject onlineMenuUI;
     public GameObject teamPickUI;
     public GameObject UPNPErrorUI;
+    public GameObject gameTutorialUI;
     public GameObject ipAddressInput;
     public GameObject turnMessagesUI;
     public GameObject turnMessageText;
@@ -171,5 +172,9 @@ public class Menus : MonoBehaviour {
         turnMessagesUI.SetActive(true);
         mainCamera.SetActive(true);
     }
-
+    public void exitTutorial()
+    {
+        gameTutorialUI.SetActive(false);
+        mainMenuUI.SetActive(true);
+    }
 }
