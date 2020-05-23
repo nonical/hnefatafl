@@ -2,6 +2,7 @@ using Mirror;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Text.RegularExpressions;
 
 public class Menus : MonoBehaviour {
     public GameObject pieceManager;
@@ -18,8 +19,10 @@ public class Menus : MonoBehaviour {
     public GameObject UICamera;
     public GameObject mainCamera;
     public TMP_Text turnMessageField;
+    public TMP_Text ipAddressPlaceholder;
     public AudioClip pageSwitchSound;
     public SoundtrackController soundtrackController;
+    
 
     private void Start() {
         toggleInputScript(false);
@@ -137,12 +140,19 @@ public class Menus : MonoBehaviour {
     }
 
     public void joinGame() {
+        var regex = new Regex(@"^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$");
         var ip = ipAddressInput.GetComponent<TMP_InputField>().text;
-
-        if (string.IsNullOrEmpty(ip)) {
+        bool ismatch = regex.IsMatch(ip);
+        
+        if (string.IsNullOrEmpty(ip) || !ismatch) {
+            ipAddressInput.GetComponent<TMP_InputField>().text = "";
+            ipAddressPlaceholder.color=Color.red;
             return;
         }
-
+        if(ipAddressPlaceholder.color == Color.red)
+        {
+            ipAddressPlaceholder.color = turnMessageField.color;
+        }
         onlineMenuUI.SetActive(false);
         toggleInputScript(true);
 
