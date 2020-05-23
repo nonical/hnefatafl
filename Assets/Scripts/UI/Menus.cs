@@ -51,6 +51,7 @@ public class Menus : MonoBehaviour {
     }
 
     public void Resume() {
+        soundtrackController.ActivateFilters(false);
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         isGamePaused = false;
@@ -58,6 +59,7 @@ public class Menus : MonoBehaviour {
     }
 
     public void Pause() {
+        soundtrackController.ActivateFilters(true);
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         isGamePaused = true;
@@ -65,6 +67,7 @@ public class Menus : MonoBehaviour {
     }
 
     public void Exit() {
+        soundtrackController.ActivateFilters(false);
         Time.timeScale = 1f;
         pauseMenuUI.SetActive(false);
         SceneManager.LoadScene("SampleScene");
