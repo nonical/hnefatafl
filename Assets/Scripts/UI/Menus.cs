@@ -13,6 +13,7 @@ public class Menus : MonoBehaviour {
     public GameObject teamPickUI;
     public GameObject UPNPErrorUI;
     public GameObject gameTutorialUI;
+    public GameObject waitingUI;
     public GameObject ipAddressInput;
     public GameObject turnMessagesUI;
     public GameObject turnMessageText;
@@ -35,6 +36,7 @@ public class Menus : MonoBehaviour {
     private void OnDestroy() {
         MovementLogic.FigureMoved -= changeTurnMessage;
         NetworkManagerHnefatafl.ClientDisconnect -= Exit;
+        NetworkManagerHnefatafl.ClientConnect -= onClientConnect;
     }
 
     private void changeTurnMessage(GameObject arg1, (int i, int j) arg2) {
@@ -117,7 +119,17 @@ public class Menus : MonoBehaviour {
     public void hostGame() {
         onlineMenuUI.SetActive(false);
         teamPickUI.SetActive(true);
+        NetworkManagerHnefatafl.ClientConnect += onClientConnect;
         soundtrackController.PlayOneShot(pageSwitchSound);
+    }
+
+    public void onClientConnect()
+    {
+        waitingUI.SetActive(false);
+        toggleInputScript(true);
+        UICamera.SetActive(false);
+        mainCamera.SetActive(true);
+        turnMessagesUI.SetActive(true);
     }
 
     private void startHosting() {
@@ -128,11 +140,7 @@ public class Menus : MonoBehaviour {
             UPNPErrorUI.SetActive(true);
             return;
         }
-        toggleInputScript(true);
-        UICamera.SetActive(false);
-        RenderSettings.fog = false;
-        turnMessagesUI.SetActive(true);
-        mainCamera.SetActive(true);
+        waitingUI.SetActive(true);
     }
 
     public void hostAsAttacker() {
@@ -165,7 +173,7 @@ public class Menus : MonoBehaviour {
             ipAddressPlaceholder.color = turnMessageField.color;
         }
         onlineMenuUI.SetActive(false);
-        toggleInputScript(true);
+        //toggleInputScript(true);
 
         networkManager.networkAddress = ip;
         networkManager.StartClient();
