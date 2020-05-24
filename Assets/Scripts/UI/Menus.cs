@@ -123,8 +123,7 @@ public class Menus : MonoBehaviour {
         soundtrackController.PlayOneShot(pageSwitchSound);
     }
 
-    public void onClientConnect()
-    {
+    public void onClientConnect() {
         waitingUI.SetActive(false);
         toggleInputScript(true);
         UICamera.SetActive(false);
@@ -180,14 +179,13 @@ public class Menus : MonoBehaviour {
         UICamera.SetActive(false);
         turnMessagesUI.SetActive(true);
         mainCamera.SetActive(true);
+        toggleInputScript(true);
     }
-    public void exitTutorial()
-    {
+    public void exitTutorial() {
         gameTutorialUI.SetActive(false);
         mainMenuUI.SetActive(true);
     }
-    public void openTutorial()
-    {
+    public void openTutorial() {
         mainMenuUI.SetActive(false);
         gameTutorialUI.SetActive(true);
     }
