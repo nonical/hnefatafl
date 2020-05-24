@@ -23,15 +23,17 @@ public class Menus : MonoBehaviour {
     public TMP_Text ipAddressPlaceholder;
     public AudioClip pageSwitchSound;
     public SoundtrackController soundtrackController;
-    
+
 
     private void Start() {
         toggleInputScript(false);
         MovementLogic.FigureMoved += changeTurnMessage;
+        NetworkManagerHnefatafl.ClientDisconnect += Exit;
     }
 
     private void OnDestroy() {
         MovementLogic.FigureMoved -= changeTurnMessage;
+        NetworkManagerHnefatafl.ClientDisconnect -= Exit;
     }
 
     private void changeTurnMessage(GameObject arg1, (int i, int j) arg2) {
@@ -119,12 +121,9 @@ public class Menus : MonoBehaviour {
 
     private void startHosting() {
         teamPickUI.SetActive(false);
-        try
-        {
+        try {
             networkManager.StartHost();
-        }
-        catch (System.Exception)
-        {
+        } catch (System.Exception) {
             UPNPErrorUI.SetActive(true);
             return;
         }
@@ -155,14 +154,13 @@ public class Menus : MonoBehaviour {
         var regex = new Regex(@"^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$");
         var ip = ipAddressInput.GetComponent<TMP_InputField>().text;
         bool ismatch = regex.IsMatch(ip);
-        
+
         if (string.IsNullOrEmpty(ip) || !ismatch) {
             ipAddressInput.GetComponent<TMP_InputField>().text = "";
-            ipAddressPlaceholder.color=Color.red;
+            ipAddressPlaceholder.color = Color.red;
             return;
         }
-        if(ipAddressPlaceholder.color == Color.red)
-        {
+        if (ipAddressPlaceholder.color == Color.red) {
             ipAddressPlaceholder.color = turnMessageField.color;
         }
         onlineMenuUI.SetActive(false);
