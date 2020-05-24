@@ -1,10 +1,11 @@
-﻿using System;
+using System;
 using System.Linq;
 using UnityEngine;
 
 public class WinConditions : MonoBehaviour {
     public GameObject pieceManager;
     public GameObject gameFinishedUI;
+    public ParticlesHandler particlesHandler;
 
     public static Action AttackersWin;
     public static Action DefendersWin;
@@ -15,10 +16,11 @@ public class WinConditions : MonoBehaviour {
         DefendersWin += DefendersWinMessage;
     }
 
-    public static void CheckHavenTiles(GameObject _, (int i, int j) indices) {
+    public void CheckHavenTiles(GameObject _, (int i, int j) indices) {
         var havenTileIndices = new[] { (0, 0), (0, 10), (10, 0), (10, 10) };
 
         if (havenTileIndices.Contains(indices)) {
+            particlesHandler.KingEscapeEffect(indices);
             DefendersWin?.Invoke();
         }
     }
@@ -31,7 +33,6 @@ public class WinConditions : MonoBehaviour {
         GameObject.Find("TurnMessagesUI").SetActive(false);
         gameFinishedUI.transform.GetChild(0).gameObject.SetActive(true); //display defenders win text
         gameFinishedUI.SetActive(true);
-        Time.timeScale = 0f;
         toggleInputScript(false);
     }
 
@@ -39,7 +40,6 @@ public class WinConditions : MonoBehaviour {
         GameObject.Find("TurnMessagesUI").SetActive(false);
         gameFinishedUI.transform.GetChild(1).gameObject.SetActive(true); //display attackers win text
         gameFinishedUI.SetActive(true);
-        Time.timeScale = 0f;
         toggleInputScript(false);
     }
 
