@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class TakingLogic : MonoBehaviour {
     public Transform CratePosition;
+    public ParticlesHandler particlesHandler;
 
     private List<GameObject> FigureList = new List<GameObject>(3);
     private List<GameObject> TilesList = new List<GameObject>(3);
@@ -17,6 +18,8 @@ public class TakingLogic : MonoBehaviour {
     void FigureToCrate(GameObject figure) {
         float randomX = UnityEngine.Random.Range(-0.7f, 0.7f);
         float randomZ = UnityEngine.Random.Range(-0.3f, 0.3f);
+
+        particlesHandler.DeathParticleEffect(figure);
 
         figure.transform.parent = CratePosition;
         figure.transform.localPosition = new Vector3(randomX, 0, randomZ);
