@@ -178,4 +178,10 @@ public class Menus : MonoBehaviour {
         gameTutorialUI.SetActive(false);
         mainMenuUI.SetActive(true);
     }
+    public void openTutorial()
+    {
+        mainMenuUI.SetActive(false);
+        gameTutorialUI.SetActive(true);
+    }
+
 }
