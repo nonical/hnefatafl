@@ -71,11 +71,14 @@ public class Menus : MonoBehaviour {
     }
 
     public void Exit() {
+        if (networkManager.isNetworkActive) {
+            networkManager.StopHost();
+        }
+
         soundtrackController.ActivateFilters(false);
         Time.timeScale = 1f;
         pauseMenuUI.SetActive(false);
         SceneManager.LoadScene("SampleScene");
-        networkManager.StopHost();
     }
 
     public void Quit() {
